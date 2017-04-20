@@ -45,12 +45,6 @@ N.gaf = {
 		this.dialogEl = document.createElement('div');
 		this.dialogEl.setAttribute('id', 'gaf-dialog');
 		this.dialogEl.innerHTML = '<h5>' + this.options.title + '</h5><a id="gaf-dialog-close" href="#">&times;</a>' +
-//				'<p id="gaf-type" data-type="' + this.options.option1 + '">' +
-//					'<a class="active" href="#">' + this.options.option1 + '</a>' +
-//					'<a href="#">' + this.options.option2 + '</a>' +
-//					'<a href="#">' + this.options.option3 + '</a>' +
-//					'<a href="#">' + this.options.option4 + '</a>' +
-//				'</p>' +
 			'<form id="recruiter-form">' +
 			'<input id="gaf-text-name" class="full-name" type="text" placeholder="Your full name" maxlength="500">' +
           	'<input id="gaf-text-email" class="email-address" type="text" placeholder="Your email address" maxlength="500">' +
@@ -58,7 +52,6 @@ N.gaf = {
 	},
 	handleButtonClick: function(e) { N.gaf.loadDialog();e.preventDefault(); },
 	handleDialogClose: function(e) { N.gaf.closeDialog();e.preventDefault(); },
-//	handleTypeClick: function(e) { N.gaf.changeType(e);e.preventDefault(); },
 	handleSubmitClick: function(e) { N.gaf.sendFeedback();e.preventDefault(); },
 	loadButton: function()
 	{
@@ -72,55 +65,22 @@ N.gaf = {
 		d.body.removeChild( d.getElementById('gaf-button') );
 
 		d.body.appendChild(this.dialogEl);
-//		d.getElementById('gaf-text').focus();
 
 		d.getElementById('gaf-dialog-close').addEventListener( 'click', this.handleDialogClose, false );
-//		d.getElementById('gaf-type').addEventListener( 'click', this.handleTypeClick, false );
 		d.getElementById('gaf-submit').addEventListener( 'click', this.handleSubmitClick, false );
 	},
 	closeDialog: function()
 	{
 		d.getElementById('gaf-dialog-close').removeEventListener('click', this.handleDialogClose, false );
-//		d.getElementById('gaf-type').removeEventListener('click', this.handleTypeClick, false );
 		d.getElementById('gaf-submit').removeEventListener('click', this.handleSubmitClick, false );
 
 		d.body.removeChild( d.getElementById('gaf-dialog') );
 
 		this.loadButton();
 	},
-/*
-	changeType: function(e)
-	{
-		var types = d.querySelectorAll('#gaf-type a');
-		for (var i = 0; i < types.length; i++)
-		{
-			types[i].className = '';
-		}
 
-		if ( e.target.tagName == 'A' )
-		{
-			d.getElementById('gaf-type').dataset.type = e.target.innerHTML;
-			e.target.className = 'active';
-		}
-		d.getElementById('gaf-text').focus();
-	},
-*/
 	sendFeedback: function()
 	{
-/*		if ( d.getElementById('gaf-text-name').value.length < 1 ) && ( d.getElementById('gaf-text-email').value.length < 1 )
-		{
-			d.getElementById('gaf-text-name').style.border = '2px solid #c00';
-			d.getElementById('gaf-text').focus();
-			return false;
-		}
-		ga( 'send', {
-			'hitType': 'event',
-			'eventCategory': 'Feedback',
-			'eventAction': d.getElementById('gaf-type').dataset.type,
-			'eventLabel': d.getElementById('gaf-text').value,
-			'eventValue': 1
-		} );
-*/
 		alert( this.options.thankyou );
 		this.closeDialog();
 	}
@@ -131,11 +91,6 @@ N.gaf = {
 gaf.init( {
  'open': 'Help us improve this site',
  'title': 'Do you have a few minutes to help us test this site?',
-// 'option1': 'Problem',
-// 'option2': 'Suggestion',
-// 'option3': 'Compliment',
-// 'option4': 'Other', 
- 'placeholder': 'Please enter your information',
  'send': 'Send',
  'thankyou': 'Thank you - we will be in touch shortly!'
 } );
