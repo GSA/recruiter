@@ -14,7 +14,7 @@ N.gaf = {
 		'#gaf-type a:hover{opacity:.7}' +
 		'#gaf-type a.active{font-weight:bold;text-decoration:underline}' +
 		'#gaf-text-name,#gaf-text-email{padding:.5em 0;text-align:center;max-width:100%!important;font-size:100%}' +
-		'#gaf-submit{text-align:center;display:block;font-weight:bold;font-size:120%;padding:20px 0 10px;text-decoration:none}' +
+		'#gaf-submit{text-decoration:none}' +
 		'#gaf-submit:hover{opacity:.7}' +
 		'#gaf-dialog-close{position:fixed;top:19%;right:25%;padding:10px;font-size:24px;color:rgba(0,0,0,.3);line-height:1;text-decoration:none}' +
 
@@ -46,8 +46,8 @@ N.gaf = {
 		this.dialogEl.innerHTML = '<h5>' + this.options.title + '</h5><a id="gaf-dialog-close" href="#">&times;</a>' +
 			'<form id="recruiter-form">' +
 			'<input id="gaf-text-name" class="full-name" type="text" placeholder="Your full name" maxlength="500">' +
-          	'<input id="gaf-text-email" class="email-address" type="text" placeholder="Your email address" maxlength="500">' +
-			'<div class="button-wrapper"><button><a id="gaf-submit" href="#">' + this.options.send + '</a><button></div></form>';
+          		'<input id="gaf-text-email" class="email-address" type="text" placeholder="Your email address" maxlength="500">' +
+			'<div class="button-wrapper"><button id="gaf-submit" href="#">' + this.options.send + '<button></div></form>';
 	},
 	handleButtonClick: function(e) { N.gaf.loadDialog();e.preventDefault(); },
 	handleDialogClose: function(e) { N.gaf.closeDialog();e.preventDefault(); },
