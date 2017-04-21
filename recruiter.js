@@ -47,7 +47,7 @@ N.gaf = {
 			'<form id="recruiter-form">' +
 			'<input id="gaf-text-name" class="full-name" type="text" placeholder="Your full name" maxlength="500">' +
           		'<input id="gaf-text-email" class="email-address" type="text" placeholder="Your email address" maxlength="500">' +
-			'<div class="button-wrapper"><button id="gaf-submit" href="#">' + this.options.send + '<button></div></form>';
+			'<div class="button-wrapper"><button id="gaf-submit" href="#">' + this.options.send + '</button></div></form>';
 	},
 	handleButtonClick: function(e) { N.gaf.loadDialog();e.preventDefault(); },
 	handleDialogClose: function(e) { N.gaf.closeDialog();e.preventDefault(); },
