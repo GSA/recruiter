@@ -16,7 +16,7 @@ N.gaf = {
 		'#gaf-text-name,#gaf-text-email{padding:.5em 0;text-align:center;max-width:100%!important;font-size:100%}' +
 		'#gaf-submit{text-decoration:none}' +
 		'#gaf-submit:hover{opacity:.7}' +
-		'#gaf-dialog-close{position:fixed;top:19%;right:25%;padding:10px;font-size:24px;color:rgba(0,0,0,.3);line-height:1;text-decoration:none}' +
+		'#gaf-dialog-close{position:fixed;top:19%;right:25%;padding:10px;font-size:24px;color:rgba(0,0,0,.3);line-height:1;max-width:500px;text-decoration:none}' +
 
 		'@media only screen and (max-width:800px){' +
 			'#gaf-dialog{left:10%;width:80%}' +
@@ -43,8 +43,7 @@ N.gaf = {
 
 		this.dialogEl = document.createElement('div');
 		this.dialogEl.setAttribute('id', 'gaf-dialog');
-		this.dialogEl.innerHTML = '<h5>' + this.options.title + '</h5><a id="gaf-dialog-close" href="#">&times;</a>' +
-			'<form id="recruiter-form">' +
+		this.dialogEl.innerHTML = '<form id="recruiter-form"><h5>' + this.options.title + '</h5><a id="gaf-dialog-close" href="#">&times;</a>' +
 			'<input id="gaf-text-name" class="full-name" type="text" placeholder="Your full name" maxlength="500">' +
           		'<input id="gaf-text-email" class="email-address" type="text" placeholder="Your email address" maxlength="500">' +
 			'<div class="button-wrapper"><button id="gaf-submit" href="#">' + this.options.send + '</button></div></form>';
