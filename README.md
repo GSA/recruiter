@@ -9,3 +9,6 @@ Embeddable forms to recruit usability research participants. Sends results to a 
 
 #### [Google Spreadsheet template](https://docs.google.com/a/gsa.gov/spreadsheets/d/14vquDC_hCroparaee6dcYzMfR-VAPUeZskLwS3IBhpU/edit?usp=sharing) 
 - contains gScript for processing submissions (make a copy)
+
+## Roadmap
+Recruiter is the first part of a larger platform for collecting user feedback via Google Tag Manager.
