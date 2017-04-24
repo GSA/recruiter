@@ -90,7 +90,7 @@ N.gaf = {
 gaf.init( {
  'open': 'Help us improve this site',
  'title': 'Do you have a few minutes to help us test this site?',
- 'description': 'Hi! We’re looking for people to participate in a 30 minute phone interview about how they use FEC.gov. If selected, we’ll contact you to setup a time.',
+ 'description': 'Hi! We’re looking for people to participate in a 30 minute phone interview about how they use Agency.gov. If selected, we’ll contact you to setup a time.',
  'send': 'Send',
  'thankyou': 'Thank you - we will be in touch shortly!'
 } );
