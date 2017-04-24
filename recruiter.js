@@ -44,6 +44,7 @@ N.gaf = {
 		this.dialogEl = document.createElement('div');
 		this.dialogEl.setAttribute('id', 'gaf-dialog');
 		this.dialogEl.innerHTML = '<form id="recruiter-form"><h5>' + this.options.title + '</h5><a id="gaf-dialog-close" href="#">&times;</a>' +
+			'<p id="gaf-description">' + this.options.description + '</p>' + 
 			'<input id="gaf-text-name" class="full-name" type="text" placeholder="Your full name" maxlength="500">' +
           		'<input id="gaf-text-email" class="email-address" type="text" placeholder="Your email address" maxlength="500">' +
 			'<div class="button-wrapper"><button id="gaf-submit" href="#">' + this.options.send + '</button></div></form>';
@@ -89,6 +90,7 @@ N.gaf = {
 gaf.init( {
  'open': 'Help us improve this site',
  'title': 'Do you have a few minutes to help us test this site?',
+ 'description': 'Hi! We’re looking for people to participate in a 30 minute phone interview about how they use FEC.gov. If selected, we’ll contact you to setup a time.',
  'send': 'Send',
  'thankyou': 'Thank you - we will be in touch shortly!'
 } );
