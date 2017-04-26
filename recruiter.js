@@ -14,7 +14,7 @@ N.gaf = {
 		'#gaf-type a:hover{opacity:.7}' +
 		'#gaf-type a.active{font-weight:bold;text-decoration:underline}' +
 		'#gaf-text-name,#gaf-text-email{padding:.5em 0;text-align:center;max-width:100%!important;font-size:100%}' +
-		'#gaf-submit{text-decoration:none}' +
+		'#gaf-submit{text-decoration:none,margin-left:auto;margin-right:auto;display:block;}' +
 		'#gaf-submit:hover{opacity:.7}' +
 		'#gaf-dialog-close{position:fixed;top:17%;right:35.5%;padding:10px;font-size:24px;color:rgba(0,0,0,.3);line-height:1;max-width:500px;text-decoration:none}' +
 
