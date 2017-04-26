@@ -1,5 +1,5 @@
 # recruiter [WIP]
-Embeddable forms to recruit usability research participants. Sends results to a Google Sheet, deployed via Google Tag Manager.
+Embeddable forms for recruiting usability research participants. Uses a custom Google Apps Script to send submissions to a Google Sheet, deployed via Google Tag Manager.
 
 ## Components
 
@@ -19,5 +19,8 @@ Embeddable forms to recruit usability research participants. Sends results to a 
  4. Copy the 'Current web app URL' and post this in your form/script action
  5. Insert column names on your destination sheet matching the parameter names of the data you are passing in (exactly matching case)
 
+#### Forms
+- Uses [U.S. Web Design Standards](https://standards.usa.gov/) styles 
+
 ## Roadmap
-Recruiter is the first part of a larger platform for collecting user feedback via Google Tag Manager.
+Recruiter is the first part of a larger feedback platform implemented via Google Tag Manager.
