@@ -2,11 +2,13 @@
 Embeddable forms for recruiting usability research participants. Uses Google Tag Manager for targeting and custom Google Apps Script to send submissions to a Google Sheet.
 
 ## Components
- - [Google Sheets Template](https://docs.google.com/a/gsa.gov/spreadsheets/d/14vquDC_hCroparaee6dcYzMfR-VAPUeZskLwS3IBhpU/edit?usp=sharing) - make a copy
- - Google Apps Script (included in Sheets template)
+ - [Google Sheets Template](https://docs.google.com/a/gsa.gov/spreadsheets/d/14vquDC_hCroparaee6dcYzMfR-VAPUeZskLwS3IBhpU/edit?usp=sharing)
  - [Google Tag Manager](https://tagmanager.google.com) - account required 
- - Google Analytics (session metadata) 
+  - Google Apps Script (included in Sheets template)
  - [U.S. Web Design Standards](https://standards.usa.gov/) styles and [form patterns guidance](https://standards.usa.gov/components/form-templates/) for accessibility.
+ 
+ **Optional**
+ - Google Analytics (session metadata) 
  
  
 ## Deploying
