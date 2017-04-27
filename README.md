@@ -43,7 +43,7 @@ Embeddable forms for recruiting usability research participants. Uses Google Tag
 4. Customize these variables(?) (TODO: script URL? test if sharing extant app works when someone else tries to deploy) 
 5. Install (or have agency install) the Tag Manager snippet code in the site template.
 6. Create any specialized `Triggers` in Tag Manager, e.g. "Only show recruiter on pages in /directory", etc.
-5. Test GTM config correctly loads recruiter locally (TODO: how to do local testing for GTM)
+5. Test GTM config correctly loads recruiter locally (see [Preview and Debug containers](https://support.google.com/tagmanager/answer/6107056?visit_id=1-636286168306770023-1579186406&rd=1))
 6. Publish GTM container. **Reminder: this is equivalent to pushing code to production and should follow any QA + testing standards.**
 
 
