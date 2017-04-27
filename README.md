@@ -2,7 +2,7 @@
 Embeddable forms for recruiting usability research participants. Uses Google Tag Manager for targeting and custom Google Apps Script to send submissions to a Google Sheet.
 
 ## Components
- - [Google Sheets Template](https://docs.google.com/a/gsa.gov/spreadsheets/d/14vquDC_hCroparaee6dcYzMfR-VAPUeZskLwS3IBhpU/copy)
+ - [Google Sheets Template](https://docs.google.com/a/gsa.gov/spreadsheets/d/1_de-8lkbxPAy0ovb_WH22EI03vX8ZnuZhhiXnXWvxpQ/copy)
  - [Google Tag Manager](https://tagmanager.google.com) - account required 
  - [Google Apps Script](https://script.google.com/a/gsa.gov/d/1CSUCE9JHkMOutafCJxw3NTQ-J3n3PZlF0Z9UEJae9KxIlcq_AkWTXsEa/edit?usp=sharing) (must be added to sheet)
  - [U.S. Web Design Standards](https://standards.usa.gov/) styles and [form patterns guidance](https://standards.usa.gov/components/form-templates/) for accessibility.
@@ -14,7 +14,7 @@ Embeddable forms for recruiting usability research participants. Uses Google Tag
 ## Deploying 
 
 #### Google Spreadsheet template
- 1. Make a copy of the [Spreadsheet template](https://docs.google.com/a/gsa.gov/spreadsheets/d/14vquDC_hCroparaee6dcYzMfR-VAPUeZskLwS3IBhpU/copy) (contains gScript for processing submissions)
+ 1. Make a copy of the [Spreadsheet template](https://docs.google.com/a/gsa.gov/spreadsheets/d/1_de-8lkbxPAy0ovb_WH22EI03vX8ZnuZhhiXnXWvxpQ/copy) (contains gScript for processing submissions)
  2. Publish > Deploy as web app
  
     a. enter Project Version name and click 'Save New Version'
