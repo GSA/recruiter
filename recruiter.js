@@ -43,11 +43,11 @@ N.gaf = {
 
 		this.dialogEl = document.createElement('div');
 		this.dialogEl.setAttribute('id', 'gaf-dialog');
-		this.dialogEl.innerHTML = '<form id="recruiter-form"><h5>' + this.options.title + '</h5><a id="gaf-dialog-close" href="#">&times;</a>' +
-			'<p id="gaf-description">' + this.options.description + '</p>' + 
-			'<input id="gaf-text-name" class="full-name" type="text" placeholder="Your full name" maxlength="500">' +
-          		'<input id="gaf-text-email" class="email-address" type="text" placeholder="Your email address" maxlength="500">' +
-			'<div class="button-wrapper"><button id="gaf-submit" href="#">' + this.options.send + '</button></div></form>';
+		this.dialogEl.innerHTML = '<form id="recruiter-form" class="usa-form"><h5>' + this.options.title + '</h5><a id="gaf-dialog-close" href="#">&times;</a>' +
+			'<p id="gaf-description">' + this.options.description + '</p>' +
+			'<fieldset><label for="gaf-text-name">Your full name</label><input id="gaf-text-name" name="gaf-text-name" class="full-name usa-input-required" type="text" required="" aria-required="true" maxlength="500">' +
+      '<label for="gaf-text-email">Your email address</label><input id="gaf-text-email" name=="gaf-text-email" class="email-address usa-input-required" type="text" required="" aria-required="true" maxlength="500">' +
+			'<div class="button-wrapper"><button id="gaf-submit" href="#">' + this.options.send + '</button></div><fieldset></form>';
 	},
 	handleButtonClick: function(e) { N.gaf.loadDialog();e.preventDefault(); },
 	handleDialogClose: function(e) { N.gaf.closeDialog();e.preventDefault(); },
