@@ -7,7 +7,7 @@
 
 N.gaf = {
 	css: 	'#gaf-button{position:fixed;bottom:0;right:50px;background:rgba(61, 194, 85, 0.8);color:#fff;padding:4px 7px 8px 7px;font-size:12px;border-top-left-radius:5px;border-top-right-radius:5px;text-decoration:none;z-index:999999999}' +
-		'#gaf-dialog{position:fixed;top:20%;left:25%;right:25%;background:rgba(255,255,255,0.9);max-width:620px;padding:20px;z-index:999999999}' +
+		'#gaf-dialog{position:fixed;top:20%;left:25%;right:25%;background:rgba(255,255,255,0.9);max-width:36rem;padding:20px;z-index:999999999}' +
 		'#gaf-dialog h5{text-align:center;font-size:24px;margin:0}' +
 		'#gaf-type{text-align:center}' +
 		'#gaf-type a{display:inline-block;width:24%;min-width:6em;text-align:center}' +
@@ -43,7 +43,7 @@ N.gaf = {
 
 		this.dialogEl = document.createElement('div');
 		this.dialogEl.setAttribute('id', 'gaf-dialog');
-		this.dialogEl.innerHTML = '<form id="recruiter-form" class="usa-form"><h5>' + this.options.title + '</h5><a id="gaf-dialog-close" href="#">&times;</a>' +
+		this.dialogEl.innerHTML = '<form id="recruiter-form"><h5>' + this.options.title + '</h5><a id="gaf-dialog-close" href="#">&times;</a>' +
 			'<p id="gaf-description">' + this.options.description + '</p>' +
 			'<fieldset><label for="gaf-text-name">Your full name</label><input id="gaf-text-name" name="gaf-text-name" class="full-name usa-input-required" type="text" required="" aria-required="true" maxlength="500">' +
       '<label for="gaf-text-email">Your email address</label><input id="gaf-text-email" name=="gaf-text-email" class="email-address usa-input-required" type="text" required="" aria-required="true" maxlength="500">' +
@@ -90,7 +90,7 @@ N.gaf = {
 gaf.init( {
  'open': 'Help us improve this site',
  'title': 'Do you have a few minutes to help us test this site?',
- 'description': 'Hi! We’re looking for people to participate in a 30 minute phone interview about how they use Agency.gov. If selected, we’ll contact you to setup a time.',
+ 'description': 'Hi! We’re looking for people to participate in a 30 minute phone interview about how they use [agency.gov]. If selected, we’ll contact you to setup a time.',
  'send': 'Send',
  'thankyou': 'Thank you - we will be in touch shortly!'
 } );
