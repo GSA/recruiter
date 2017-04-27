@@ -32,8 +32,8 @@ Embeddable forms for recruiting usability research participants. Uses Google Tag
  | Name | String | First and Last name |
  | Email | String | Email address |
  | UserAgent | String | OS + Version, Browser + version |
- | TODO: PageURL | String | URI of page where form was submitted |
- | TODO: Referrer | String | Referring page (how user arrived at PageURL |
+ | URL | String | URI of page where form was submitted |
+ | Referrer | String | Referring page (how user arrived at PageURL |
  
  6. TODO: how to customize capture fields. 
  **Note: PIA, PRA or other compliance issues may be triggered for any customized capture fields. Consult Chief Privacy Officer and/or PRA Desk Officer before deploying any customized form versions.**
@@ -42,7 +42,7 @@ Embeddable forms for recruiting usability research participants. Uses Google Tag
 ### Google Tag Manager
 1. If needed, [create a Tag Manager](https://tagmanager.google.com) account.
 2. Create a new Tag Manager Container (if GTM is already in use on the site, skip to Step 2).
-3. Upload [recruiter-config.json]() (TODO: upload container configuration) to a GTM container.
+3. Upload [gtm-recruiter-to-gsheet.json](https://github.com/laurenancona/recruiter/blob/master/gtm-recruiter-to-sheet.json) (TODO: TEST) to a GTM container.
 4. Customize these variables(?) (TODO: script URL? test if sharing extant app works when someone else tries to deploy) 
 5. Install (or have agency install) the Tag Manager snippet code in the site template.
 6. Create any specialized `Triggers` in Tag Manager, e.g. "Only show recruiter on pages in /directory", etc.
