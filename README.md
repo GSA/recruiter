@@ -2,24 +2,27 @@
 Embeddable forms for recruiting usability research participants. Uses Google Tag Manager for targeting and custom Google Apps Script to send submissions to a Google Sheet.
 
 ## Components
- - [Google Sheets Template](https://docs.google.com/a/gsa.gov/spreadsheets/d/14vquDC_hCroparaee6dcYzMfR-VAPUeZskLwS3IBhpU/edit?usp=sharing)
+ - [Google Sheets Template](https://docs.google.com/a/gsa.gov/spreadsheets/d/14vquDC_hCroparaee6dcYzMfR-VAPUeZskLwS3IBhpU/copy)
  - [Google Tag Manager](https://tagmanager.google.com) - account required 
-  - Google Apps Script (included in Sheets template)
+ - [Google Apps Script](https://script.google.com/a/gsa.gov/d/1CSUCE9JHkMOutafCJxw3NTQ-J3n3PZlF0Z9UEJae9KxIlcq_AkWTXsEa/edit?usp=sharing) (must be added to sheet)
  - [U.S. Web Design Standards](https://standards.usa.gov/) styles and [form patterns guidance](https://standards.usa.gov/components/form-templates/) for accessibility.
  
  **Optional**
  - Google Analytics (session metadata) 
  
  
-## Deploying
+## Deploying 
 
-#### [Google Spreadsheet template](https://docs.google.com/a/gsa.gov/spreadsheets/d/14vquDC_hCroparaee6dcYzMfR-VAPUeZskLwS3IBhpU/edit?usp=sharing) 
- 1. Make a copy of the Spreadsheet template (contains gScript for processing submissions)
+#### Google Spreadsheet template
+ 1. Make a copy of the [Spreadsheet template](https://docs.google.com/a/gsa.gov/spreadsheets/d/14vquDC_hCroparaee6dcYzMfR-VAPUeZskLwS3IBhpU/copy) (contains gScript for processing submissions)
  2. Publish > Deploy as web app
-    * enter Project Version name and click 'Save New Version'
-    * set security level and enable service (most likely execute as 'me' and access 'anyone, even anonymously)
  
- 4. From the `Settings` tab in the Spreadsheet, copy `WebAppURL` and replace the `gSheetsAppURL` custom variable in Google Tag Manager. (TODO: can this be read from the sheet by GTM? Could a custom UI button push this to GTM, where the container ID is added to the `Settings` tab on the sheet?)
+    a. enter Project Version name and click 'Save New Version'
+    
+    b. set security level and enable service (most likely execute as 'me' and access 'anyone, even anonymously)
+    
+ 4. From the `Settings` tab in the Spreadsheet, copy `WebAppURL` and replace the `WebAppURL` custom variable in Google Tag Manager. 
+ (TODO: can this be read from the sheet by GTM? Could a custom UI button push this to GTM, where the container ID is added to the `Settings` tab on the sheet?)
 
 ##### Default fields provided in this configuration:
  
