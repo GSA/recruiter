@@ -27,7 +27,10 @@ var sheet = ss.getSheets()[0].getSheetName();  // find name of first tab in that
 var SHEET_NAME = sheet;
 var SHEET_KEY = SpreadsheetApp.getActiveSpreadsheet().getId(); // find key (unique ID) of current sheet
 
-// doGet is required here because GTM uses GET requests for Custom Image tags
+/* doGet is required here because GTM uses GET requests for Custom Image tags
+   which is what posts the form data to the endpoint of the Web App created by
+   publishing this script */
+
  function doGet(e){
    return handleResponse(e);
  }
@@ -38,7 +41,7 @@ var SHEET_KEY = SpreadsheetApp.getActiveSpreadsheet().getId(); // find key (uniq
 
 function handleResponse(e) {
   var lock = LockService.getPublicLock();
-  lock.waitLock(30000); // wait 30 seconds before conceding defeat.
+  lock.waitLock(30000); // wait 30 seconds before conceding defeat
 
   try {
   // next set where we write the data - you could write to multiple/alternate destinations
@@ -77,12 +80,13 @@ function handleResponse(e) {
 
 
 // ============================ UTILITY FUNCTIONS =============================== //
+// These are automatically triggered onOpen of the bound Spreadsheet
 
 // https://developers.google.com/apps-script/reference/spreadsheet/sheet#getSheetId
 function getId() {
   var ss = SpreadsheetApp.getActiveSpreadsheet()
   var sheet = ss.getId();
-  Logger.log(sheet);
+//  Logger.log(sheet);
   return sheet;
 }
 
@@ -90,20 +94,20 @@ function getId() {
 function getSheetName() {
   var ss = SpreadsheetApp.getActiveSpreadsheet();
   var sheet = ss.getSheets()[0].getSheetName();
-  Logger.log(sheet)
+//  Logger.log(sheet)
   return sheet;
 }
 
 // https://developers.google.com/apps-script/reference/script/service#getUrl
 function getWebAppId() {
   var url = ScriptApp.getService().getUrl()
-  Logger.log(url);
+//  Logger.log(url);
   return url;
 }
 
 // https://developers.google.com/apps-script/reference/spreadsheet/spreadsheet#geturl
 function getSpreadsheetUrl() {
   var ss = SpreadsheetApp.getActiveSpreadsheet().getUrl();
-  Logger.log(ss);
+//  Logger.log(ss);
   return ss;
 }
