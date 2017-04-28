@@ -7,7 +7,7 @@
 
 N.gaf = {
 	css: 	'#gaf-button{position:fixed;bottom:0;right:50px;background:#02bfe7;color:#fff;padding:4px 7px 8px 7px;font-size:12px;border-top-left-radius:5px;border-top-right-radius:5px;text-decoration:none;z-index:999999999}' +
-		'#gaf-dialog{position:fixed;top:20%;left:25%;right:25%;background:rgba(255,255,255,0.9);max-width:36rem;padding:20px;z-index:999999999}' +
+		'#gaf-dialog{position:fixed;top:20%;left:25%;right:25%;background:#f1f1f1;max-width:36rem;padding:20px;z-index:999999999}' +
 		'#gaf-dialog h5{text-align:center;font-size:24px;margin:0}' +
 		'#gaf-type{text-align:center}' +
 		'#gaf-type a{display:inline-block;width:24%;min-width:6em;text-align:center}' +
@@ -94,7 +94,7 @@ N.gaf = {
 }( document, window ));
 
 gaf.init( {
- 'open': 'Help us improve this site',
+ 'open': {{Recruiter Tab}},
  'title': 'Do you have a few minutes to help us test this site?',
  'description': 'Hi! We’re looking for people to participate in a 30 minute phone interview about how they use [agency.gov]. If selected, we’ll contact you to set up a time.',
  'send': 'Send',
