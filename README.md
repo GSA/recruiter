@@ -39,18 +39,20 @@ Embeddable forms for recruiting usability research participants. Uses Google Tag
 3. Create a new Tag Manager Container and `Publish` the (currently empty) container.
 4. In Main Menu under `Admin` > ` Container`, select `Import Container` _(TODO: TEST import to a GTM container)._
 
-  a. For `Choose Container File`, select the file you downloaded above.
+    a. For `Choose Container File`, select the file you downloaded above.
 
-  b. For `Choose workspace`:
-    - For new containers, select `New`
-    - For existing containers, select `Existing`
+    b. For `Choose workspace`:
 
-  c. For `Choose an import option` select `Merge`
+      - For new containers, select `New`
+
+      - For existing containers, select `Existing`
+
+    c. For `Choose an import option` select `Merge`
 
 5. Install (or have agency install) the Tag Manager snippet code in the site template.
 6. Create any specialized `Triggers` in Tag Manager, e.g. "Only show recruiter on pages in /directory", etc. for the following `Tag`:
 
-  - `recruiter.js` Controls where the recruiter "tab" appears within the site. By default, it is set to appear on all pages that have the GTM snippet installed.
+    - `recruiter.js` Controls where the recruiter "tab" appears within the site. By default, it is set to appear on all pages that have the GTM snippet installed.
 
 7. Test GTM config correctly loads recruiter locally (see [Preview and Debug containers](https://support.google.com/tagmanager/answer/6107056?visit_id=1-636286168306770023-1579186406&rd=1))
 8. **Publish** GTM container. **Reminder: this is equivalent to pushing code to production and should follow any QA + testing standards.**
