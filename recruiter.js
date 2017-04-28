@@ -94,7 +94,7 @@ N.gaf = {
 }( document, window ));
 
 gaf.init( {
- 'open': {{Recruiter Tab}},
+ 'open': '{{Recruiter Tab}}',
  'title': 'Do you have a few minutes to help us test this site?',
  'description': 'Hi! We’re looking for people to participate in a 30 minute phone interview about how they use [agency.gov]. If selected, we’ll contact you to set up a time.',
  'send': 'Send',
