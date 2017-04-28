@@ -37,13 +37,15 @@ Embeddable forms for recruiting usability research participants. Uses Google Tag
 1. Download [gtm-recruiter-to-gsheet.json](https://github.com/laurenancona/recruiter/blob/master/gtm-recruiter-to-sheet.json)
 2. If needed, [create a Tag Manager](https://tagmanager.google.com) account. _(If GTM is already in use on the site and you have access to the container, skip to Step 4)_
 3. Create a new Tag Manager Container and `Publish` the (currently empty) container.
-4. In Main Menu under `Admin` > ` Container`, select `Import Container` _(TODO: TEST) to a GTM container._
+4. In Main Menu under `Admin` > ` Container`, select `Import Container` _(TODO: TEST import to a GTM container)._
 
-  a. For `Choose Container File`, choose the file you downloaded above.
+  a. For `Choose Container File`, select the file you downloaded above.
 
   b. For `Choose workspace`:
     - For new containers, select `New`
     - For existing containers, select `Existing`
+    
+  c. For `Choose an import option` select `Merge`
 
 5. Install (or have agency install) the Tag Manager snippet code in the site template.
 6. Create any specialized `Triggers` in Tag Manager, e.g. "Only show recruiter on pages in /directory", etc. for the following `Tag`:
