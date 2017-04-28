@@ -64,10 +64,13 @@ Embeddable forms for recruiting usability research participants. Uses Google Tag
  | Name | String | First and Last name |
  | Email | String | Email address |
  | UserAgent | String | OS + Version, Browser + version |
- | URL | String | URI of page where form was submitted |
- | Referrer | String | Referring page (how user arrived at PageURL |
+ | URL* | String | URI of page where form was submitted |
+ | Referrer* | String | Referring page (how user arrived at PageURL |
+
+**/*Note:** When deploying to sites where URLs contain referenced to content that may infer information of a personal or sensitive nature (e.g. visiting content related to medical conditions on NIH.gov), you may wish to omit passing the last two fields (`URL` and `Referrer`) to the Sheet. This can be done simply by removing the last two query parameters (`&Referrer={{Referrer}}&URL={{Page URL}}`) from the URL in the `Recruiter to Google Sheet` Custom Image Tag in GTM.
 
 ###### TODO: how to customize capture fields.
+
  **Note: PIA, [PRA](https://www.usability.gov/how-to-and-tools/guidance/pra-overview.html) or other privacy or security compliance issues may be triggered for any customized capture fields. Consult Chief Privacy Officer and/or PRA Desk Officer before deploying any customized form versions.**
 
 
