@@ -6,7 +6,7 @@
 (function ( d, N ) { 'use strict';
 
 N.gaf = {
-	css: 	'#gaf-button{position:fixed;bottom:0;right:50px;background:rgba(61, 194, 85, 0.8);color:#fff;padding:4px 7px 8px 7px;font-size:12px;border-top-left-radius:5px;border-top-right-radius:5px;text-decoration:none;z-index:999999999}' +
+	css: 	'#gaf-button{position:fixed;bottom:0;right:50px;background:#02bfe7;color:#fff;padding:4px 7px 8px 7px;font-size:12px;border-top-left-radius:5px;border-top-right-radius:5px;text-decoration:none;z-index:999999999}' +
 		'#gaf-dialog{position:fixed;top:20%;left:25%;right:25%;background:rgba(255,255,255,0.9);max-width:36rem;padding:20px;z-index:999999999}' +
 		'#gaf-dialog h5{text-align:center;font-size:24px;margin:0}' +
 		'#gaf-type{text-align:center}' +
