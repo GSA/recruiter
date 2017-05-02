@@ -65,7 +65,7 @@ Embeddable forms for recruiting usability research participants. Uses Google Tag
  | Field name | Type | Description |
  | ---------- | ---- | ----------- |
  | Date | Timestamp | submission time and date |
- | Name | String | First and Last name |
+ | Name | String | First name |
  | Email | String | Email address |
  | UserAgent | String | OS + Version, Browser + version |
  | URL* | String | URI of page where form was submitted |
