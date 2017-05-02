@@ -47,7 +47,7 @@ N.gaf = {
 			'<form id="recruiter-form"><h5>' + this.options.title + '</h5><a id="gaf-dialog-close" href="#">&times;</a>' +
 				'<p id="gaf-description">' + this.options.description + '</p>' +
 			  '<fieldset>' +
-					'<label for="gaf-text-name">Your full name</label><input id="gaf-text-name" name="gaf-text-name" class="full-name usa-input-required" type="text" required="" aria-required="true" maxlength="500">' +
+					'<label for="gaf-text-name">Your first name</label><input id="gaf-text-name" name="gaf-text-name" class="full-name usa-input-required" type="text" required="" aria-required="true" maxlength="500">' +
 	    		'<label for="gaf-text-email">Your email address</label><input id="gaf-text-email" name=="gaf-text-email" class="email-address usa-input-required" type="text" required="" aria-required="true" maxlength="500">' +
 					'<div class="button-wrapper">' +
 			  		'<button id="gaf-submit" href="#">' + this.options.send + '</button>' +
