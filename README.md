@@ -17,7 +17,7 @@ Embeddable forms for recruiting usability research participants. Uses Google Tag
 
 ## Deploying
 
-### Google Spreadsheet template
+### 1. Google Spreadsheet template
  1. Make a copy of the [Spreadsheet template](https://docs.google.com/a/gsa.gov/spreadsheets/d/1_de-8lkbxPAy0ovb_WH22EI03vX8ZnuZhhiXnXWvxpQ/copy) (contains gScript for processing submissions)
  2. From main Sheets menu, select `Tools` > `Script editor`
 
@@ -37,7 +37,7 @@ Embeddable forms for recruiting usability research participants. Uses Google Tag
     _(TODO: can this be read from the sheet by GTM? Could a custom UI button push this to GTM, where the container ID is added to the `Settings` tab on the sheet?)_
 
 
-### Google Tag Manager
+### 2. Google Tag Manager
 1. Download [gtm-recruiter-to-gsheet.json](https://github.com/laurenancona/recruiter/blob/master/gtm-recruiter-to-sheet.json)
 2. If needed, [create a Tag Manager](https://tagmanager.google.com) account. _(If GTM is already in use on the site and you have access to the container, skip to Step 4)_
 3. Create a new Tag Manager Container and `Publish` the (currently empty) container.
