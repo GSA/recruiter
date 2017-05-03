@@ -1,7 +1,7 @@
 # recruiter [WIP]
 Embeddable forms for recruiting usability research participants. Uses Google Tag Manager to load form UI and targeting, and a custom Google Apps Script to send submissions to a Google Sheet.
 
-![feedback platform components](https://gsa.github.io/recruiter/Feedback_Tool_Flow.svg)
+![feedback platform components](https://gsa.github.io/recruiter/Feedback_Platform_Components.svg)
 
 ## Components
  - [Google Sheets Template](https://docs.google.com/a/gsa.gov/spreadsheets/d/1_de-8lkbxPAy0ovb_WH22EI03vX8ZnuZhhiXnXWvxpQ/copy)
