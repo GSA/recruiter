@@ -1,11 +1,12 @@
 {
     "exportFormatVersion": 2,
-    "exportTime": "2017-04-27 21:59:21",
+    "exportTime": "2017-05-04 22:54:03",
     "containerVersion": {
-        "path": "accounts/1357356891/containers/6810548/versions/2",
+        "path": "accounts/1357356891/containers/6810548/versions/3",
         "accountId": "1357356891",
         "containerId": "6810548",
-        "containerVersionId": "2",
+        "containerVersionId": "3",
+        "name": "recruiter only",
         "container": {
             "path": "accounts/1357356891/containers/6810548",
             "accountId": "1357356891",
@@ -15,7 +16,7 @@
             "usageContext": [
                 "WEB"
             ],
-            "fingerprint": "1493329571428",
+            "fingerprint": "1493937324011",
             "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/1357356891/containers/6810548/workspaces?apiLink=container"
         },
         "tag": [
@@ -380,20 +381,6 @@
             {
                 "accountId": "1357356891",
                 "containerId": "6810548",
-                "folderId": "8",
-                "name": "Events",
-                "fingerprint": "1493310681128"
-            },
-            {
-                "accountId": "1357356891",
-                "containerId": "6810548",
-                "folderId": "9",
-                "name": "Feedback UI",
-                "fingerprint": "1493310681128"
-            },
-            {
-                "accountId": "1357356891",
-                "containerId": "6810548",
                 "folderId": "10",
                 "name": "GTM to gSheet",
                 "fingerprint": "1493310681128"
@@ -467,9 +454,15 @@
                 "containerId": "6810548",
                 "type": "CONTAINER_VERSION",
                 "name": "Container Version"
+            },
+            {
+                "accountId": "1357356891",
+                "containerId": "6810548",
+                "type": "CONTAINER_ID",
+                "name": "Container ID"
             }
         ],
-        "fingerprint": "1493330098383",
-        "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/1357356891/containers/6810548/versions/2?apiLink=version"
+        "fingerprint": "1493938430169",
+        "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/1357356891/containers/6810548/versions/3?apiLink=version"
     }
 }
