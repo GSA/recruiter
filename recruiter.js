@@ -7,7 +7,7 @@
 
 N.gaf = {
 	css: 	'#gaf-button{position:fixed;bottom:0;right:50px;background:#02bfe7;color:#fff;padding:4px 7px 8px 7px;font-size:12px;border-top-left-radius:5px;border-top-right-radius:5px;text-decoration:none;z-index:999999999}' +
-		'#gaf-dialog{position:fixed;top:20%;left:25%;right:25%;background:#f1f1f1;max-width:36rem;padding:20px;z-index:999999999}' +
+		'#gaf-dialog{position:fixed;top:20%;left:33%;right:33%;background:#f1f1f1;padding:20px;z-index:999999999}' +
 		'#gaf-dialog h5{text-align:center;font-size:24px;margin:0}' +
 		'#gaf-type{text-align:center}' +
 		'#gaf-type a{display:inline-block;width:24%;min-width:6em;text-align:center}' +
@@ -16,7 +16,7 @@ N.gaf = {
 		'#gaf-text-name,#gaf-text-email{padding:.5em 0;text-align:center;max-width:100%!important;font-size:100%}' +
 		'#gaf-submit{text-decoration:none,margin-left:auto;margin-right:auto;display:block;}' +
 		'#gaf-submit:hover{opacity:.7}' +
-		'#gaf-dialog-close{position:fixed;top:17%;right:35.5%;padding:10px;font-size:24px;color:rgba(0,0,0,.3);line-height:1;max-width:500px;text-decoration:none}' +
+		'#gaf-dialog-close{position:fixed;top:17%;right:45.5%;padding:10px;font-size:24px;color:rgba(0,0,0,.3);line-height:1;max-width:500px;text-decoration:none}' +
 
 		'@media only screen and (max-width:800px){' +
 			'#gaf-dialog{left:10%;width:80%}' +
