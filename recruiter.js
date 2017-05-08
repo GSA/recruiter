@@ -17,6 +17,7 @@ N.gaf = {
 		'#gaf-submit{text-decoration:none;margin-left:auto;margin-right:auto;display:block;}' +
 		'#gaf-submit:hover{opacity:.7}' +
 		'#gaf-dialog-close{position:absolute;top:0%;right:0%;padding:10px;font-size:24px;color:rgba(0,0,0,.3);line-height:1;text-decoration:none}' +
+		'#gaf-dialog-privacy{position:absolute;bottom:1%;font-size:.7rem;color:#aeb0b5;}' +
 
 		'@media only screen and (max-width:600px){' +
 			'#gaf-dialog{left:10%;width:80%}' +
@@ -53,6 +54,7 @@ N.gaf = {
 			  		'<button id="gaf-submit" class="usa-button-primary-alt" href="#">' + this.options.send + '</button>' +
 					'</div>' +
 				'<fieldset>' +
+				'<p id="gaf-dialog-privacy"><a href="#">Privacy</a></p>' +
 			'</form>';
 	},
 	handleButtonClick: function(e) { N.gaf.loadDialog();e.preventDefault(); },
