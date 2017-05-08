@@ -14,9 +14,9 @@ N.gaf = {
 		'#gaf-type a:hover{opacity:.7}' +
 		'#gaf-type a.active{font-weight:bold;text-decoration:underline}' +
 		'#gaf-text-name,#gaf-text-email{padding:.5em 0;text-align:center;max-width:100%!important;font-size:100%}' +
-		'#gaf-submit{text-decoration:none,margin-left:auto;margin-right:auto;display:block;}' +
+		'#gaf-submit{text-decoration:none;margin-left:auto;margin-right:auto;display:block;}' +
 		'#gaf-submit:hover{opacity:.7}' +
-		'#gaf-dialog-close{position:fixed;top:17%;right:45.5%;padding:10px;font-size:24px;color:rgba(0,0,0,.3);line-height:1;max-width:500px;text-decoration:none}' +
+		'#gaf-dialog-close{position:absolute;top:0%;right:0%;padding:10px;font-size:24px;color:rgba(0,0,0,.3);line-height:1;text-decoration:none}' +
 
 		'@media only screen and (max-width:800px){' +
 			'#gaf-dialog{left:10%;width:80%}' +
@@ -50,7 +50,7 @@ N.gaf = {
 					'<label for="gaf-text-name">Your first name</label><input id="gaf-text-name" name="gaf-text-name" class="full-name usa-input-required" type="text" required="" aria-required="true" maxlength="500">' +
 	    		'<label for="gaf-text-email">Your email address</label><input id="gaf-text-email" name=="gaf-text-email" class="email-address usa-input-required" type="text" required="" aria-required="true" maxlength="500">' +
 					'<div class="button-wrapper">' +
-			  		'<button id="gaf-submit" href="#">' + this.options.send + '</button>' +
+			  		'<button id="gaf-submit" class="usa-button-primary-alt" href="#">' + this.options.send + '</button>' +
 					'</div>' +
 				'<fieldset>' +
 			'</form>';
