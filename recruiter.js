@@ -8,7 +8,6 @@
 N.gaf = {
 	css: 	'#gaf-button{position:fixed;bottom:0;right:50px;background:#02bfe7;color:#fff;padding:4px 7px 8px 7px;font-size:12px;border-top-left-radius:5px;border-top-right-radius:5px;text-decoration:none;z-index:999999999}' +
 		'#gaf-dialog{position:fixed;top:20%;left:33%;right:33%;min-width:350px;background:#f1f1f1;padding:20px;z-index:999999999}' +
-		'#gaf-dialog h5{text-align:center;font-size:24px;margin:0}' +
 		'#gaf-type{text-align:center}' +
 		'#gaf-type a{display:inline-block;width:24%;min-width:6em;text-align:center}' +
 		'#gaf-type a:hover{opacity:.7}' +
@@ -45,7 +44,7 @@ N.gaf = {
 		this.dialogEl = document.createElement('div');
 		this.dialogEl.setAttribute('id', 'gaf-dialog');
 		this.dialogEl.innerHTML =
-			'<form id="recruiter-form"><h5>' + this.options.title + '</h5><a id="gaf-dialog-close" href="#">&times;</a>' +
+			'<form id="recruiter-form"><h3>' + this.options.title + '</h3><a id="gaf-dialog-close" href="#">&times;</a>' +
 				'<p id="gaf-description">' + this.options.description + '</p>' +
 			  '<fieldset>' +
 					'<label for="gaf-text-name">Your first name</label><input id="gaf-text-name" name="gaf-text-name" class="full-name usa-input-required" type="text" required="" aria-required="true" maxlength="500">' +
