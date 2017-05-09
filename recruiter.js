@@ -54,7 +54,7 @@ N.gaf = {
 			  		'<input type="submit" id="gaf-submit" class="usa-button-primary-alt" href="#"></input>' +
 					'</div>' +
 				'<fieldset>' +
-				'<p id="gaf-dialog-privacy"><a href="#">Privacy</a></p>' +
+				'<p id="gaf-dialog-privacy" class="usa-external_link"><a href="#">Privacy</a></p>' +
 			'</form>';
 	},
 	handleButtonClick: function(e) { N.gaf.loadDialog();e.preventDefault(); },
