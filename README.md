@@ -58,11 +58,16 @@ Embeddable forms for recruiting usability research participants. Uses Google Tag
 
     - **`recruiter.js`** Controls where the recruiter "tab" appears within the site. By default, it is set to appear on all pages that have the GTM snippet installed.
 
-7. Test GTM config correctly loads recruiter locally (see [Preview and Debug containers](https://support.google.com/tagmanager/answer/6107056?visit_id=1-636286168306770023-1579186406&rd=1))
-8. **Publish** GTM container. **Reminder: this is equivalent to pushing code to production and should follow any QA + testing standards.**
+7. **Test** GTM config correctly loads recruiter locally (see [Preview and Debug containers](https://support.google.com/tagmanager/answer/6107056?visit_id=1-636286168306770023-1579186406&rd=1))
+8. **Publish** GTM container. 
+  
+  **Reminder: this is equivalent to pushing code to production and should follow any QA + testing standards.**
 
 
-##### Default fields provided in this configuration:
+---
+
+
+## Default fields provided in this configuration:
 
  | Field name | Type | Description |
  | ---------- | ---- | ----------- |
@@ -75,7 +80,7 @@ Embeddable forms for recruiting usability research participants. Uses Google Tag
 
 **\*Note:** When deploying to sites where URLs contain references to content that may infer information of a personal or sensitive nature (e.g. visiting content related to medical conditions on NIH.gov), you may wish to omit passing the last two fields (`URL` and `Referrer`) to the Sheet. This can be done simply by removing the last two query parameters (`&Referrer={{Referrer}}&URL={{Page URL}}`) from the URL in the `Recruiter to Google Sheet` Custom Image Tag in GTM.
 
- **Note: PIA, [PRA](https://www.usability.gov/how-to-and-tools/guidance/pra-overview.html) or other privacy or security compliance issues may be triggered for any customized capture fields. Consult Chief Privacy Officer and/or PRA Desk Officer before deploying any customized form versions.**
+ **Warning: PIA, [PRA](https://www.usability.gov/how-to-and-tools/guidance/pra-overview.html) or other privacy or security compliance issues may be triggered for any customized capture fields. Consult Chief Privacy Officer and/or PRA Desk Officer before deploying any customized form versions.**
 
 
 ## Roadmap
