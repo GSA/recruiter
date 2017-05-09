@@ -6,7 +6,7 @@
 (function ( d, N ) { 'use strict';
 
 	N.fba = {
-		css: 	'#fba-button{position:fixed;bottom:0;right:50px;background:#02bfe7;color:#fff;padding:4px 7px 8px 7px;font-size:12px;text-decoration:none;z-index:999999999}' +
+		css: 	'#fba-button{position:fixed;bottom:0;right:50px;background:#02bfe7;color:#fff;padding:5px 10px;font-size:1em;text-decoration:none;z-index:999999999}' +
 			'#fba-dialog{position:fixed;top:20%;left:33%;right:33%;min-width:350px;background:#f1f1f1;padding:20px;z-index:999999999}' +
 			'#fba-dialog h3{margin-top:0.5em}' +
 			'#fba-type{text-align:center}' +
@@ -96,7 +96,7 @@
 
 // Set options for tab text, modal title, description, and alert message after submit.
 fba.init( {
- 'open': 'Help us improve this site',
+ 'open': 'Help improve this site',
  'title': 'Do you have a few minutes to help us test this site?',
  'description': 'Hi! We’re looking for people to participate in a 30 minute phone interview about how they use [agency.gov]. If selected, we’ll contact you to set up a time.',
  'send': 'Send',
