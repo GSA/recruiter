@@ -7,7 +7,7 @@
 
 N.gaf = {
 	css: 	'#gaf-button{position:fixed;bottom:0;right:50px;background:#02bfe7;color:#fff;padding:4px 7px 8px 7px;font-size:12px;border-top-left-radius:5px;border-top-right-radius:5px;text-decoration:none;z-index:999999999}' +
-		'#gaf-dialog{position:fixed;top:20%;left:33%;right:33%;background:#f1f1f1;padding:20px;z-index:999999999}' +
+		'#gaf-dialog{position:fixed;top:20%;left:33%;right:33%;min-width:350px;background:#f1f1f1;padding:20px;z-index:999999999}' +
 		'#gaf-dialog h5{text-align:center;font-size:24px;margin:0}' +
 		'#gaf-type{text-align:center}' +
 		'#gaf-type a{display:inline-block;width:24%;min-width:6em;text-align:center}' +
@@ -51,7 +51,7 @@ N.gaf = {
 					'<label for="gaf-text-name">Your first name</label><input id="gaf-text-name" name="gaf-text-name" class="full-name usa-input-required" type="text" required="" aria-required="true" maxlength="500">' +
 	    		'<label for="gaf-text-email">Your email address</label><input id="gaf-text-email" name=="gaf-text-email" class="email-address usa-input-required" type="text" required="" aria-required="true" maxlength="500">' +
 					'<div class="button-wrapper">' +
-			  		'<button id="gaf-submit" class="usa-button-primary-alt" href="#">' + this.options.send + '</button>' +
+			  		'<input type="submit" id="gaf-submit" class="usa-button-primary-alt" href="#">' + this.options.send + '</input>' +
 					'</div>' +
 				'<fieldset>' +
 				'<p id="gaf-dialog-privacy"><a href="#">Privacy</a></p>' +
