@@ -5,96 +5,96 @@
 
 (function ( d, N ) { 'use strict';
 
-N.gaf = {
-	css: 	'#gaf-button{position:fixed;bottom:0;right:50px;background:#02bfe7;color:#fff;padding:4px 7px 8px 7px;font-size:12px;border-top-left-radius:5px;border-top-right-radius:5px;text-decoration:none;z-index:999999999}' +
-		'#gaf-dialog{position:fixed;top:20%;left:33%;right:33%;min-width:350px;background:#f1f1f1;padding:20px;z-index:999999999}' +
-		'#gaf-type{text-align:center}' +
-		'#gaf-type a{display:inline-block;width:24%;min-width:6em;text-align:center}' +
-		'#gaf-type a:hover{opacity:.7}' +
-		'#gaf-type a.active{font-weight:bold;text-decoration:underline}' +
-		'#gaf-text-name,#gaf-text-email{padding:.5em 0;text-align:center;max-width:100%!important;font-size:100%}' +
-		'#gaf-submit{text-decoration:none;}' +
-		'#gaf-submit:hover{opacity:.7}' +
-		'#gaf-dialog-close{position:absolute;top:0%;right:0%;padding:10px;font-size:24px;color:rgba(0,0,0,.3);line-height:1;text-decoration:none}' +
-		'#gaf-dialog-privacy{position:absolute;bottom:1%;font-size:.9rem;color:#aeb0b5;}' +
+	N.fba = {
+		css: 	'#fba-button{position:fixed;bottom:0;right:50px;background:#02bfe7;color:#fff;padding:4px 7px 8px 7px;font-size:12px;border-top-left-radius:5px;border-top-right-radius:5px;text-decoration:none;z-index:999999999}' +
+			'#fba-dialog{position:fixed;top:20%;left:33%;right:33%;min-width:350px;background:#f1f1f1;padding:20px;z-index:999999999}' +
+			'#fba-type{text-align:center}' +
+			'#fba-type a{display:inline-block;width:24%;min-width:6em;text-align:center}' +
+			'#fba-type a:hover{opacity:.7}' +
+			'#fba-type a.active{font-weight:bold;text-decoration:underline}' +
+			'#fba-text-name,#fba-text-email{padding:.5em 0;text-align:center;max-width:100%!important;font-size:100%}' +
+			'#fba-dialog-close{position:absolute;top:0%;right:0%;padding:10px;font-size:24px;color:rgba(0,0,0,.3);line-height:1;text-decoration:none}' +
+			'#fba-dialog-privacy{position:absolute;bottom:1%;font-size:1.2rem;color:#aeb0b5;}' +
 
-		'@media only screen and (max-width:600px){' +
-			'#gaf-dialog{left:10%;width:80%}' +
-			'#gaf-dialog-close{right:10%}' +
-		'}',
+			'@media only screen and (max-width:600px){' +
+				'#fba-dialog{left:10%;width:80%}' +
+				'#fba-dialog-close{right:10%}' +
+			'}',
 
-	init: function( options )
-	{
-		this.options = options;
-		this.loadCss();
-		this.loadHtml();
-		this.loadButton();
-	},
-	loadCss: function()
-	{
-		d.head.innerHTML += '<style>' + this.css + '</style>';
-	},
-	loadHtml: function()
-	{
-		this.buttonEl = document.createElement('a');
-		this.buttonEl.setAttribute('id', 'gaf-button');
-		this.buttonEl.setAttribute('href', '#');
-		this.buttonEl.innerHTML = this.options.open;
+		init: function( options )
+		{
+			this.options = options;
+			this.loadCss();
+			this.loadHtml();
+			this.loadButton();
+		},
+		loadCss: function()
+		{
+			d.head.innerHTML += '<style>' + this.css + '</style>';
+		},
+		loadHtml: function()
+		{
+			this.buttonEl = document.createElement('a');
+			this.buttonEl.setAttribute('id', 'fba-button');
+			this.buttonEl.setAttribute('href', '#');
+			this.buttonEl.innerHTML = this.options.open;
 
-		this.dialogEl = document.createElement('div');
-		this.dialogEl.setAttribute('id', 'gaf-dialog');
-		this.dialogEl.innerHTML =
-			'<form id="recruiter-form"><h3>' + this.options.title + '</h3><a id="gaf-dialog-close" href="#">&times;</a>' +
-				'<p id="gaf-description">' + this.options.description + '</p>' +
-			  '<fieldset>' +
-					'<label for="gaf-text-name">Your first name</label><input id="gaf-text-name" name="gaf-text-name" class="full-name usa-input-required" type="text" required="" aria-required="true" maxlength="500">' +
-	    		'<label for="gaf-text-email">Your email address</label><input id="gaf-text-email" name=="gaf-text-email" class="email-address usa-input-required" type="text" required="" aria-required="true" maxlength="500">' +
-					'<div class="button-wrapper">' +
-			  		'<input type="submit" id="gaf-submit" class="usa-button-primary-alt" href="#"></input>' +
-					'</div>' +
-				'<fieldset>' +
-				'<p id="gaf-dialog-privacy" class="usa-external_link"><a href="#">Privacy</a></p>' +
-			'</form>';
-	},
-	handleButtonClick: function(e) { N.gaf.loadDialog();e.preventDefault(); },
-	handleDialogClose: function(e) { N.gaf.closeDialog();e.preventDefault(); },
-	handleSubmitClick: function(e) { N.gaf.sendFeedback();e.preventDefault(); },
-	loadButton: function()
-	{
-		d.body.appendChild(this.buttonEl);
-		d.getElementById('gaf-button').addEventListener( 'click', this.handleButtonClick, false );
-	},
-	loadDialog: function()
-	{
-		d.getElementById('gaf-button').removeEventListener('click', this.handleButtonClick, false );
+			this.dialogEl = document.createElement('div');
+			this.dialogEl.setAttribute('id', 'fba-dialog');
 
-		d.body.removeChild( d.getElementById('gaf-button') );
+			// Here lies our form interface
+			this.dialogEl.innerHTML =
+				'<form id="recruiter-form"><h3>' + this.options.title + '</h3><a id="fba-dialog-close" href="#">&times;</a>' +
+					'<p id="fba-description">' + this.options.description + '</p>' +
+				  '<fieldset>' +
+						'<label for="fba-text-name">Your first name</label><input id="fba-text-name" name="fba-text-name" class="full-name usa-input-required" type="text" required="" aria-required="true" maxlength="500">' +
+		    		'<label for="fba-text-email">Your email address</label><input id="fba-text-email" name=="fba-text-email" class="email-address usa-input-required" type="text" required="" aria-required="true" maxlength="500">' +
+						'<div class="button-wrapper">' +
+				  		'<input type="submit" id="fba-submit" class="usa-button-primary-alt" href="#"></input>' +
+						'</div>' +
+					'<fieldset>' +
+					'<p id="fba-dialog-privacy" class="usa-external_link"><a href="#">Privacy</a></p>' +
+				'</form>';
+		},
+		handleButtonClick: function(e) { N.fba.loadDialog();e.preventDefault(); },
+		handleDialogClose: function(e) { N.fba.closeDialog();e.preventDefault(); },
+		handleSubmitClick: function(e) { N.fba.sendFeedback();e.preventDefault(); },
+		loadButton: function()
+		{
+			d.body.appendChild(this.buttonEl);
+			d.getElementById('fba-button').addEventListener( 'click', this.handleButtonClick, false );
+		},
+		loadDialog: function()
+		{
+			d.getElementById('fba-button').removeEventListener('click', this.handleButtonClick, false );
+			d.body.removeChild( d.getElementById('fba-button') );
 
-		d.body.appendChild(this.dialogEl);
+			d.body.appendChild(this.dialogEl);
 
-		d.getElementById('gaf-dialog-close').addEventListener( 'click', this.handleDialogClose, false );
-		d.getElementById('gaf-submit').addEventListener( 'click', this.handleSubmitClick, false );
-	},
-	closeDialog: function()
-	{
-		d.getElementById('gaf-dialog-close').removeEventListener('click', this.handleDialogClose, false );
-		d.getElementById('gaf-submit').removeEventListener('click', this.handleSubmitClick, false );
+			d.getElementById('fba-dialog-close').addEventListener( 'click', this.handleDialogClose, false );
+			d.getElementById('fba-submit').addEventListener( 'click', this.handleSubmitClick, false );
+		},
+		closeDialog: function()
+		{
+			d.getElementById('fba-dialog-close').removeEventListener('click', this.handleDialogClose, false );
+			d.getElementById('fba-submit').removeEventListener('click', this.handleSubmitClick, false );
 
-		d.body.removeChild( d.getElementById('gaf-dialog') );
+			d.body.removeChild( d.getElementById('fba-dialog') );
 
-		this.loadButton();
-	},
+			this.loadButton();
+		},
 
-	sendFeedback: function()
-	{
-		alert( this.options.thankyou );
-		this.closeDialog();
-	}
-};
+		sendFeedback: function()
+		{
+			alert( this.options.thankyou );
+			this.closeDialog();
+		}
+	};
 
 }( document, window ));
 
-gaf.init( {
+// Set options for tab text, modal title, description, and alert message after submit.
+fba.init( {
  'open': 'Help us improve this site',
  'title': 'Do you have a few minutes to help us test this site?',
  'description': 'Hi! We’re looking for people to participate in a 30 minute phone interview about how they use [agency.gov]. If selected, we’ll contact you to set up a time.',
