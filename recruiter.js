@@ -51,7 +51,7 @@ N.gaf = {
 					'<label for="gaf-text-name">Your first name</label><input id="gaf-text-name" name="gaf-text-name" class="full-name usa-input-required" type="text" required="" aria-required="true" maxlength="500">' +
 	    		'<label for="gaf-text-email">Your email address</label><input id="gaf-text-email" name=="gaf-text-email" class="email-address usa-input-required" type="text" required="" aria-required="true" maxlength="500">' +
 					'<div class="button-wrapper">' +
-			  		'<input type="submit" id="gaf-submit" class="usa-button-primary-alt" href="#">' + this.options.send + '</input>' +
+			  		'<input type="submit" id="gaf-submit" class="usa-button-primary-alt" href="#"></input>' +
 					'</div>' +
 				'<fieldset>' +
 				'<p id="gaf-dialog-privacy"><a href="#">Privacy</a></p>' +
