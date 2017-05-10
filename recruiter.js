@@ -13,7 +13,7 @@
 			'#fba-type a{display:inline-block;width:24%;min-width:6em;text-align:center}' +
 			'#fba-type a:hover{opacity:.7}' +
 			'#fba-type a.active{font-weight:bold;text-decoration:underline}' +
-			'#fba-text-name,#fba-text-email{padding:.5em 0;text-align:center;max-width:100%!important;font-size:100%}' +
+			'#fba-text-name,#fba-text-email{padding:.5em 0;max-width:100%!important;font-size:100%}' +
 			'#fba-dialog-close{position:absolute;top:0%;right:0%;padding:5px 9px;font-size:24px;color:rgba(0,0,0,.3);line-height:1;text-decoration:none}' +
 			'#fba-dialog-privacy{position:absolute;bottom:1%;font-size:1.2rem;color:#aeb0b5;}' +
 
@@ -42,10 +42,11 @@
 
 			this.dialogEl = document.createElement('div');
 			this.dialogEl.setAttribute('id', 'fba-dialog');
+			this.dialogEl.setAttribute('role', 'dialog');
 
 			// Here lies our form interface
 			this.dialogEl.innerHTML =
-				'<form id="recruiter-form"><h3>' + this.options.title + '</h3><a id="fba-dialog-close" href="#">&times;</a>' +
+				'<div class="usa-overlay"><form id="recruiter-form"><h3>' + this.options.title + '</h3><a id="fba-dialog-close" href="#">&times;</a>' +
 					'<p id="fba-description">' + this.options.description + '</p>' +
 				  '<fieldset>' +
 						'<label for="fba-text-name">Your first name</label><input id="fba-text-name" name="fba-text-name" class="full-name usa-input-required" type="text" required="" aria-required="true" maxlength="500">' +
@@ -55,7 +56,7 @@
 						'</div>' +
 					'<fieldset>' +
 					'<p id="fba-dialog-privacy" class="usa-external_link"><a href="#">Privacy</a></p>' +
-				'</form>';
+				'</form></div>';
 		},
 		handleButtonClick: function(e) { N.fba.loadDialog();e.preventDefault(); },
 		handleDialogClose: function(e) { N.fba.closeDialog();e.preventDefault(); },
