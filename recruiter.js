@@ -8,7 +8,7 @@
 	N.fba = {
 		css: 	'#fba-button{position:fixed;bottom:0;right:50px;background:#02bfe7;color:#fff;padding:5px 10px;font-size:1em;text-decoration:none;z-index:999999999}' +
 			'#fba-dialog{position:fixed;top:20%;left:33%;right:33%;min-width:350px;background:#f1f1f1;padding:20px;z-index:999999999}' +
-			'#fba-overlay{z-index:999999998};height:100%;width100%;' +
+			'#fba-overlay{z-index:999999998;height:100%;width100%}' +
 			'#fba-dialog h3{margin-top:1em}' +
 			'#fba-type{text-align:center}' +
 			'#fba-type a{display:inline-block;width:24%;min-width:6em;text-align:center}' +
