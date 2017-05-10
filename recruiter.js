@@ -41,7 +41,7 @@
 			this.dialogEl.setAttribute('role', 'dialog');
 
 			this.overlayEl = document.createElement('div');
-			this.overlayEl.setAttribute('className', 'usa-overlay');
+			this.overlayEl.classList.add('usa-overlay');
 
 			// Here lies our form interface
 			this.dialogEl.innerHTML =
