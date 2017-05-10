@@ -38,12 +38,12 @@
 			this.buttonEl.innerHTML = this.options.open;
 
 			this.dialogEl = document.createElement('div');
-			this.dialogEl.setAttribute('id', 'fba-overlay');
-			this.dialogEl.setAttribute('class', 'usa-overlay');
+			this.dialogEl.setAttribute('id', 'fba-dialog');
+			this.dialogEl.setAttribute('role', 'dialog');
 
 			this.overlayEl = document.createElement('div');
-			this.overlayEl.setAttribute('id', 'fba-dialog');
-			this.overlayEl.setAttribute('role', 'dialog');
+			this.overlayEl.setAttribute('id', 'fba-overlay');
+			this.overlayEl.setAttribute('class', 'usa-overlay');
 
 			// Here lies our form interface
 			this.dialogEl.innerHTML =
