@@ -40,8 +40,6 @@
 			this.dialogEl.setAttribute('id', 'fba-dialog');
 			this.dialogEl.setAttribute('role', 'dialog');
 
-			this.overlayEl.classList.add('usa-overlay');
-
 			// Here lies our form interface
 			this.dialogEl.innerHTML =
 				'<form id="recruiter-form"><h3>' + this.options.title + '</h3><button id="fba-dialog-close" href="#">&times;</button>' +
@@ -70,10 +68,7 @@
 			d.body.removeChild( d.getElementById('fba-button') );
 
 			d.body.appendChild(this.dialogEl);
-			this.overlayEl = d.body.getElementsByClassName('usa-overlay');
-			this.overlayEl.setAttribute('opacity', '0.3');
-			this.overlayEl.setAttribute('visibility', 'visible');
-
+			d.body.getElementsByClassName('usa-overlay').setAttribute('opacity', '0.3')
 
 			d.getElementById('fba-dialog-close').addEventListener( 'click', this.handleDialogClose, false );
 			d.getElementById('fba-submit').addEventListener( 'click', this.handleSubmitClick, false );
