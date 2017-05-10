@@ -41,7 +41,7 @@
 			this.dialogEl.setAttribute('role', 'dialog');
 
 			this.overlayEl = document.createElement('div');
-			this.overlayEl.setAttribute('class', 'usa-overlay');
+			this.overlayEl.setAttribute('className', 'usa-overlay');
 
 			// Here lies our form interface
 			this.dialogEl.innerHTML =
@@ -81,7 +81,7 @@
 			d.getElementById('fba-dialog-close').removeEventListener('click', this.handleDialogClose, false );
 			d.getElementById('fba-submit').removeEventListener('click', this.handleSubmitClick, false );
 
-			d.body.removeChild( d.getElementById('fba-overlay') );
+			d.body.removeChild( d.getElementsByClassName('usa-overlay') );
 			d.body.removeChild( d.getElementById('fba-dialog') );
 
 			this.loadButton();
