@@ -51,7 +51,7 @@
 
 			// Here lies our form interface
 			this.dialogEl.innerHTML =
-				'<form id="recruiter-form"><h3>' + this.options.title + '</h3><a id="fba-dialog-close" href="#">&times;</a>' +
+				'<form id="recruiter-form"><h3>' + this.options.title + '</h3><button id="fba-dialog-close" href="#">&times;</button>' +
 					'<p id="fba-description">' + this.options.description + '</p>' +
 				  '<fieldset>' +
 						'<label for="fba-text-name">Your first name</label><input id="fba-text-name" name="fba-text-name" class="full-name usa-input-required" type="text" required="" aria-required="true" maxlength="500">' +
