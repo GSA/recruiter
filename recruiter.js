@@ -10,11 +10,7 @@
 			'#fba-dialog{position:fixed;top:20%;left:33%;right:33%;min-width:350px;background:#f1f1f1;padding:20px;z-index:999999999}' +
 			'#fba-overlay{z-index:999999998;height:100%;width100%}' +
 			'#fba-dialog h3{margin-top:1em}' +
-			'#fba-type{text-align:center}' +
-			'#fba-type a{display:inline-block;width:24%;min-width:6em;text-align:center}' +
-			'#fba-type a:hover{opacity:.7}' +
-			'#fba-type a.active{font-weight:bold;text-decoration:underline}' +
-			'#fba-text-name,#fba-text-email{padding:.5em 0;max-width:100%!important;font-size:100%}' +
+			'#fba-text-name,#fba-text-email{max-width:100%!important;font-size:100%}' +
 			'#fba-dialog-close{position:absolute;top:0%;right:0%;padding:0px 3px;font-size:24px;color:#5b616b;background:none;line-height:1;text-decoration:none}' +
 			'#fba-dialog-privacy{position:absolute;bottom:1%;font-size:1.2rem;color:#aeb0b5;}' +
 
