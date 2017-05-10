@@ -46,7 +46,7 @@
 
 			// Here lies our form interface
 			this.dialogEl.innerHTML =
-				'<div class="usa-overlay"><form id="recruiter-form"><h3>' + this.options.title + '</h3><a id="fba-dialog-close" href="#">&times;</a>' +
+				'<form id="recruiter-form"><h3>' + this.options.title + '</h3><a id="fba-dialog-close" href="#">&times;</a>' +
 					'<p id="fba-description">' + this.options.description + '</p>' +
 				  '<fieldset>' +
 						'<label for="fba-text-name">Your first name</label><input id="fba-text-name" name="fba-text-name" class="full-name usa-input-required" type="text" required="" aria-required="true" maxlength="500">' +
@@ -56,7 +56,7 @@
 						'</div>' +
 					'<fieldset>' +
 					'<p id="fba-dialog-privacy" class="usa-external_link"><a href="#">Privacy</a></p>' +
-				'</form></div>';
+				'</form>';
 		},
 		handleButtonClick: function(e) { N.fba.loadDialog();e.preventDefault(); },
 		handleDialogClose: function(e) { N.fba.closeDialog();e.preventDefault(); },
