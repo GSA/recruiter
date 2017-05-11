@@ -45,8 +45,8 @@
 				'<form id="recruiter-form"><h3>' + this.options.title + '</h3><button id="fba-dialog-close" href="#">&times;</button>' +
 					'<p id="fba-description">' + this.options.description + '</p>' +
 				  '<fieldset>' +
-						'<label for="fba-text-name">Your first name</label><input id="fba-text-name" name="fba-text-name" class="full-name usa-input-required" type="text" required="" aria-required="true" maxlength="500">' +
-		    		'<label for="fba-text-email">Your email address</label><input id="fba-text-email" name=="fba-text-email" class="email-address usa-input-required" type="text" required="" aria-required="true" maxlength="500">' +
+						'<label for="fba-text-name">Your first name</label><input id="fba-text-name" name="fba-text-name" class="full-name" type="text" maxlength="500">' +
+		    		'<label for="fba-text-email">Your email address</label><input id="fba-text-email" name=="fba-text-email" class="email-address" type="text" maxlength="500">' +
 						'<div class="button-wrapper">' +
 				  		'<input type="submit" id="fba-submit" class="usa-button-primary-alt" href="#"></input>' +
 						'</div>' +
