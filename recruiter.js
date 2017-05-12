@@ -42,7 +42,7 @@
 
 			// Here lies our form interface
 			this.dialogEl.innerHTML =
-				'<form id="recruiter-form"><h3>' + this.options.title + '</h3><button id="fba-dialog-close" href="#">&times;</button>' +
+				'<form id="recruiter-form"><h3>' + this.options.title + '</h3><a id="fba-dialog-close" type="button" href="#">&times;</a>' +
 					'<p id="fba-description">' + this.options.description + '</p>' +
 				  '<fieldset>' +
 						'<label for="fba-text-name">Your first name</label><input id="fba-text-name" name="fba-text-name" class="full-name" type="text" maxlength="500">' +
@@ -68,7 +68,7 @@
 			d.body.removeChild( d.getElementById('fba-button') );
 
 			d.body.appendChild(this.dialogEl);
-			d.body.getElementsByClassName('usa-overlay').setAttribute('opacity', '0.3')
+//			d.body.getElementsByClassName('usa-overlay').setAttribute('opacity', '0.3')
 
 			d.getElementById('fba-dialog-close').addEventListener( 'click', this.handleDialogClose, false );
 			d.getElementById('fba-submit').addEventListener( 'click', this.handleSubmitClick, false );
