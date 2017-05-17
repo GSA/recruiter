@@ -81,6 +81,10 @@ Embeddable forms for recruiting usability research participants. Uses Google Tag
 **\*Note:** When deploying to sites where URLs contain references to content that may infer information of a personal or sensitive nature (e.g. visiting content related to medical conditions on NIH.gov), you may wish to omit passing the last two fields (`URL` and `Referrer`) to the Sheet. This can be done simply by removing the last two query parameters (`&Referrer={{Referrer}}&URL={{Page URL}}`) from the URL in the `Recruiter to Google Sheet` Custom Image Tag in GTM.
 
  **Warning: PIA, [PRA](https://www.usability.gov/how-to-and-tools/guidance/pra-overview.html) or other privacy or security compliance issues may be triggered for any customized capture fields. Consult Chief Privacy Officer and/or PRA Desk Officer before deploying any customized form versions.**
+ 
+ ## Compliance
+ 
+ - **Google Sheets** are an approved System of Record for storing personally-identifiable information ([PII](https://www.gsa.gov/portal/content/104256)) under [GSA/CIO-3](https://www.federalregister.gov/documents/2014/08/12/2014-19071/privacy-act-of-1974-notice-of-an-updated-system-of-records)
 
 
 ## Roadmap
