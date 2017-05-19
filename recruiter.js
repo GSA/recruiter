@@ -51,7 +51,7 @@
 				  		'<input type="submit" id="fba-submit" class="usa-button-primary-alt" href="#"></input>' +
 						'</div>' +
 					'<fieldset>' +
-					'<p id="fba-dialog-privacy" class="usa-external_link"><a href="#">Privacy</a></p>' +
+					'<p id="fba-dialog-privacy" class="usa-external_link"><a href="https://www.gsa.gov/portal/content/162010">Privacy</a></p>' +
 				'</form>';
 		},
 		handleButtonClick: function(e) { N.fba.loadDialog();e.preventDefault(); },
