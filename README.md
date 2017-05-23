@@ -84,11 +84,17 @@ Embeddable forms for recruiting usability research participants. Uses Google Tag
  
  ## Compliance
  
+ **Paperwork Reduction Act of 1995 (PRA)** 
+ - See [exemption conditions](https://obamawhitehouse.archives.gov/sites/default/files/omb/inforeg/pra_flexibilities_memo_7_22_16_finalI.pdf), details TBD
+ 
+ **Privacy**
  - **Google Sheets** are an approved System of Record for storing personally-identifiable information ([PII](https://www.gsa.gov/portal/content/104256)) under [GSA/CIO-3](https://www.federalregister.gov/documents/2014/08/12/2014-19071/privacy-act-of-1974-notice-of-an-updated-system-of-records)
 
+**Security**
+ - **Google Apps Script** Pending review and approval by GSA IT
 
 ## Roadmap
 Recruiter is the first part of a larger WIP feedback platform implemented via Google Tag Manager.
 
-#### TODO: how to customize capture fields
+
 
