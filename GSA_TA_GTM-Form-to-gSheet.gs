@@ -1,6 +1,13 @@
 //
-// IMPORTANT: this script assumes a Google Sheet set up like this template:
+// IMPORTANT:
+// This script is designed to receive submissions from forms deployed via Google Tag Manager:
+// https://github.com/GSA/recruiter
+//
+// Script designed bound to a Google Sheet set up like this template:
 // https://docs.google.com/a/gsa.gov/spreadsheets/d/1_de-8lkbxPAy0ovb_WH22EI03vX8ZnuZhhiXnXWvxpQ/copy
+//
+// Adapted from script by Margarita Evtimova | https://twitter.com/maggieto
+// http://www.ganotes.com/pass-dynamic-data-to-google-sheets-using-google-tag-manager/
 //
 // ==================== Usage ====================
 //
@@ -11,13 +18,10 @@
 // 2. From the Settings tab, value of 'WebAppURL' (auto-detected by this script) should
 //    match the Custom Variable of the same name in Google Tag Manager.
 //
-// 3. Column names in the destination Spreadsheet should exactly match (case-sensitive)
-//    parameter names of the data you are passing in (exactly matching case)
+// 3. Column names in the destination Spreadsheet should exactly match
+//    parameter names of the data you are passing in (case-sensitive)
 
 // ================= Begin Script ================
-//
-// Adapted from script by Margarita Evtimova | https://twitter.com/maggieto
-// http://www.ganotes.com/pass-dynamic-data-to-google-sheets-using-google-tag-manager/
 
 var SCRIPT_PROP = PropertiesService.getScriptProperties(); // new property service
 
@@ -27,10 +31,7 @@ var sheet = ss.getSheets()[0].getSheetName();  // find name of first tab in that
 var SHEET_NAME = sheet;
 var SHEET_KEY = SpreadsheetApp.getActiveSpreadsheet().getId(); // find key (unique ID) of current sheet
 
-/* doGet is required here because GTM uses GET requests for Custom Image tags
-   which is what posts the form data to the endpoint of the Web App created by
-   publishing this script */
-
+// doGet is required here because GTM uses GET requests for Custom Image tags
  function doGet(e){
    return handleResponse(e);
  }
@@ -44,11 +45,11 @@ function handleResponse(e) {
   lock.waitLock(30000); // wait 30 seconds before conceding defeat
 
   try {
-  // next set where we write the data - you could write to multiple/alternate destinations
+  // next set where we write the data - can also write to multiple/alternate destinations
   var doc = SpreadsheetApp.openById(SHEET_KEY);
   var sheet = doc.getSheetByName(SHEET_NAME);
 
-  // we'll assume header is in row 1 but you can override with header_row in GET/POST data
+  // assume header is in row 1 but you can override with header_row in GET/POST data
   var headRow = e.parameter.header_row || 1;
   var headers = sheet.getRange(1, 1, 1, sheet.getLastColumn()).getValues()[0];
   var nextRow = sheet.getLastRow()+1; // get next row
@@ -77,37 +78,34 @@ function handleResponse(e) {
   }
 }
 
-
-
 // ============================ UTILITY FUNCTIONS =============================== //
-// These are automatically triggered onOpen of the bound Spreadsheet
 
+// Get id of active spreadsheet
 // https://developers.google.com/apps-script/reference/spreadsheet/sheet#getSheetId
 function getId() {
   var ss = SpreadsheetApp.getActiveSpreadsheet()
   var sheet = ss.getId();
-//  Logger.log(sheet);
   return sheet;
 }
 
+// Get name of first tab (aka "sheet") in active spreadsheet
 // https://developers.google.com/apps-script/reference/spreadsheet/spreadsheet#getsheetname
 function getSheetName() {
   var ss = SpreadsheetApp.getActiveSpreadsheet();
   var sheet = ss.getSheets()[0].getSheetName();
-//  Logger.log(sheet)
   return sheet;
 }
 
+// Get web app id of currently-published version of this script
 // https://developers.google.com/apps-script/reference/script/service#getUrl
 function getWebAppId() {
   var url = ScriptApp.getService().getUrl()
-//  Logger.log(url);
   return url;
 }
 
+// Get URL of currently active spreadsheet
 // https://developers.google.com/apps-script/reference/spreadsheet/spreadsheet#geturl
 function getSpreadsheetUrl() {
   var ss = SpreadsheetApp.getActiveSpreadsheet().getUrl();
-//  Logger.log(ss);
   return ss;
 }
