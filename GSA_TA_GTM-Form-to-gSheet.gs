@@ -3,13 +3,13 @@
 // This script is designed to receive submissions from forms deployed via Google Tag Manager:
 // https://github.com/GSA/recruiter
 //
-// Script designed bound to a Google Sheet set up like this template:
+// Script intended to be bound to a Google Sheet set up like this template:
 // https://docs.google.com/a/gsa.gov/spreadsheets/d/1_de-8lkbxPAy0ovb_WH22EI03vX8ZnuZhhiXnXWvxpQ/copy
 //
 // Adapted from script by Margarita Evtimova | https://twitter.com/maggieto
 // http://www.ganotes.com/pass-dynamic-data-to-google-sheets-using-google-tag-manager/
 //
-// ==================== Usage ====================
+// ================================ USAGE =================================== //
 //
 // 1. Publish > Deploy as web app
 //    - enter Project Version name and click 'Save New Version'
@@ -21,7 +21,7 @@
 // 3. Column names in the destination Spreadsheet should exactly match
 //    parameter names of the data you are passing in (case-sensitive)
 
-// ================= Begin Script ================
+// ============================= BEGIN SCRIPT =============================== //
 
 var SCRIPT_PROP = PropertiesService.getScriptProperties(); // new property service
 
@@ -78,7 +78,7 @@ function handleResponse(e) {
   }
 }
 
-// ============================ UTILITY FUNCTIONS =============================== //
+// ========================== UTILITY FUNCTIONS ============================= //
 
 // Get id of active spreadsheet
 // https://developers.google.com/apps-script/reference/spreadsheet/sheet#getSheetId
