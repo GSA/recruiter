@@ -15,7 +15,7 @@
 //    - enter Project Version name and click 'Save New Version'
 //    - set security level and enable service (most likely execute as 'me' and access 'anyone at GSA')
 //
-// 2. From the Settings tab, value of 'WebAppURL' (auto-detected by this script) should
+// 2. From the Settings tab, value of 'WebAppURL' (auto-populated by this script) should
 //    match the Custom Variable of the same name in Google Tag Manager.
 //
 // 3. Column names in the destination Spreadsheet should exactly match
