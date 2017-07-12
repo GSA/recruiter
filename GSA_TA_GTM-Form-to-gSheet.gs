@@ -1,6 +1,6 @@
 //
 // IMPORTANT:
-// This script is designed to receive submissions from forms deployed via Google Tag Manager:
+// This script is designed to receive submissions from forms deployed via Google Tag Manager (GTM):
 // https://github.com/GSA/recruiter
 //
 // Script intended to be bound to a Google Sheet set up like this template:
