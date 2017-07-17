@@ -50,7 +50,7 @@
 						'<div class="button-wrapper">' +
 				  		'<input type="submit" id="fba-submit" class="usa-button-primary-alt" href="#"></input>' +
 						'</div>' +
-					'<fieldset>' +
+					'</fieldset>' +
 					'<p id="fba-dialog-privacy" class="usa-external_link"><a href="https://www.gsa.gov/portal/content/162010">Privacy</a></p>' +
 				'</form>';
 		},
