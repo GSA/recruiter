@@ -1,10 +1,11 @@
-/**
+<script>
+  /**
  * Adapted from Google Analytics Feedback Widget
  * Version 1.1.0 by Xavi Esteve | http://xaviesteve.com
  */
 
 (function ( d, N ) { 'use strict';
-
+  // All form components are namespaced under 'fba' = 'Feedback Analytics'
 	N.fba = {
 		css: 	'#fba-button{position:fixed;bottom:0;right:50px;background:#02bfe7;color:#fff;padding:5px 10px;font-size:1em;text-decoration:none;z-index:999999999}' +
 			'#fba-dialog{position:fixed;top:20%;left:33%;right:33%;min-width:350px;background:#f1f1f1;padding:20px;z-index:999999999}' +
@@ -94,10 +95,13 @@
 }( document, window ));
 
 // Set options for tab text, modal title, description, and alert message after submit.
+// These will be mapped to named variables in Google Tag Manager.
 fba.init( {
- 'open': 'Help improve this site',
- 'title': 'Do you have a few minutes to help us test this site?',
- 'description': 'Hi! We’re looking for people to participate in a 30 minute phone interview about how they use [agency.gov]. If selected, we’ll contact you to set up a time.',
- 'send': 'Send',
- 'thankyou': 'Thank you - we will be in touch shortly!'
+ 'open': {{tabText}},   //'Help improve this site',
+ 'title': {{formTitle}},    //'Do you have a few minutes to help us test this site?',
+ 'description': {{formDesc}},   //'Hi! We’re looking for people to participate in a 30 minute phone interview about how they use [agency.gov]. If selected, we’ll contact you to set up a time.',
+ 'send': {{buttonLabel}},    //'Send',
+ 'thankyou': {{thankYouText}}   //'Thank you - we will be in touch shortly!'
 } );
+
+</script>
