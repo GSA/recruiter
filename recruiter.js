@@ -1,4 +1,3 @@
-<script>
   /**
  * Adapted from Google Analytics Feedback Widget
  * Version 1.1.0 by Xavi Esteve | http://xaviesteve.com
@@ -103,5 +102,3 @@ fba.init( {
  'send': {{buttonLabel}},    //'Send',
  'thankyou': {{thankYouText}}   //'Thank you - we will be in touch shortly!'
 } );
-
-</script>
