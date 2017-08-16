@@ -1,14 +1,14 @@
-/**
+  /**
  * Adapted from Google Analytics Feedback Widget
  * Version 1.1.0 by Xavi Esteve | http://xaviesteve.com
  */
 
 (function ( d, N ) { 'use strict';
-
+  // All form components are namespaced under 'fba' = 'Feedback Analytics'
 	N.fba = {
-		css: 	'#fba-button{position:fixed;bottom:0;right:50px;background:#112e51;color:#fff;border:2px solid #112e51;border-radius:2px;padding:5px 10px;font-size:1em;text-decoration:none;z-index:999999999}' +
-			'#fba-dialog{position:fixed;top:20%;left:33%;right:33%;min-width:350px;background:#f1f1f1;padding:20px;z-index:999999999}' +
-			'#fba-dialog h2{margin-top:1em;font-family:"gandhi", serif;}' +
+		css: 	'#fba-button{position:fixed;bottom:0;right:50px;background:#02bfe7;color:#fff;padding:5px 10px;font-size:1em;text-decoration:none;z-index:999999999}' +
+			'#fba-dialog{position:fixed;top:5%;left:33%;right:33%;min-width:350px;background:#f1f1f1;padding:20px;z-index:999999999}' +
+			'#fba-dialog h3{margin-top:1em}' +
 			'#fba-text-name,#fba-text-email{max-width:100%!important;font-size:100%}' +
 			'#fba-dialog-close{position:absolute;top:0%;right:0%;padding:0px 3px;font-size:24px;color:#5b616b;background:none;line-height:1;text-decoration:none}' +
 			'#fba-dialog-privacy{position:absolute;bottom:1%;font-size:1.2rem;color:#aeb0b5;}' +
