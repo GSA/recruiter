@@ -16,7 +16,6 @@ Embeddable forms for recruiting usability research participants. Uses Google Tag
 
 
 ## Deploying
----
 See [Wiki](https://github.com/GSA/recruiter/wiki/Deploying)
 
 ## Default fields provided in this configuration:
