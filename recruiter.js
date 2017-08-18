@@ -93,12 +93,17 @@
 
 }( document, window ));
 
-// Set options for tab text, modal title, description, and alert message after submit.
-// These will be mapped to named variables in Google Tag Manager.
+/*
+ * Set options for tab text, modal title, description, and alert message after submit.
+ * These will be mapped to named variables in Google Tag Manager.
+ * During development, we will occasionally load this script directly from Github.
+ * Due to scoping issues, the GTM variables will not be available to the script and cause errors.
+ * Commenting out for now, to be re-enabled when deployed to prod via GTM.
+ */
 fba.init( {
- 'open': {{tabText}},   //'Help improve this site',
- 'title': {{formTitle}},    //'Do you have a few minutes to help us test this site?',
- 'description': {{formDesc}},   //'Hi! We’re looking for people to participate in a 30 minute phone interview about how they use [agency.gov]. If selected, we’ll contact you to set up a time.',
- 'send': {{buttonLabel}},    //'Send',
- 'thankyou': {{thankYouText}}   //'Thank you - we will be in touch shortly!'
+ 'open': 'Help improve this site', // {{tabText}}
+ 'title': 'Do you have a few minutes to help us test this site?', //{{formTitle}},
+ 'description': 'Hi! We’re looking for people to participate in a 30 minute phone interview about how they use [agency.gov]. If selected, we’ll contact you to set up a time.', //{{formDesc}},
+ 'send': 'Send', //{{buttonLabel}},
+ 'thankyou': 'Thank you - we will be in touch shortly!' //{{thankYouText}} 
 } );
