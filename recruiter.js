@@ -102,8 +102,8 @@
  */
 fba.init( {
  'open': 'Help improve this site', // {{tabText}}
- 'title': 'Do you have a few minutes to help us test this site?', //{{formTitle}},
- 'description': 'Hi! We’re looking for people to participate in a 30 minute phone interview about how they use [agency.gov]. If selected, we’ll contact you to set up a time.', //{{formDesc}},
+ 'title': 'Help NSF better serve you', //{{formTitle}},
+ 'description': 'Thanks for offering to help us improve NSF.gov! Share your contact information below — if you’re selected, we’ll contact you to set up a 45-minute conversation with a member of our team.', //{{formDesc}},
  'send': 'Send', //{{buttonLabel}},
  'thankyou': 'Thank you - we will be in touch shortly!' //{{thankYouText}} 
 } );
