@@ -8,7 +8,7 @@
 	N.fba = {
 		css: 	'#fba-button{position:fixed;bottom:0;right:50px;background:#02bfe7;color:#fff;padding:5px 10px;font-size:1em;text-decoration:none;z-index:999999999}' +
 			'#fba-dialog{text-align:center;position:fixed;z-index:9999999;width:100%;top:0;}' +
-			'#recruiter-form{background: #efefef;padding: 20px;max-width: 350px;position: relative;display: inline-block;margin-top: 5%;text-align: left;}' +
+			'#recruiter-form{background: #efefef;padding: 20px;max-width: 500px;position: relative;display: inline-block;margin-top: 5%;text-align: left;}' +
 			'#fba-dialog h3{margin-top:1em}' +
 			'#fba-text-name,#fba-text-email{max-width:100%!important;font-size:100%}' +
 			'#fba-dialog-close{position:absolute;top:0%;right:0%;padding:0px 3px;font-size:24px;color:#5b616b;background:none;line-height:1;text-decoration:none;width:auto;}' +
