@@ -7,7 +7,7 @@
   // All form components are namespaced under 'fba' = 'Feedback Analytics'
 	N.fba = {
 		css: 	'#fba-button{position:fixed;bottom:0;right:50px;background:#02bfe7;color:#fff;padding:5px 10px;font-size:1em;text-decoration:none;z-index:999999999}' +
-			'#fba-dialog{text-align:center;position:fixed;z-index:9999999;width:100%;top:0;}' +
+			'#fba-dialog{text-align:center;position:fixed;z-index:9999999;bottom:0;top:0;left:0;right:0;overflow-y:auto;}' +
 			'#recruiter-form{background: #efefef;padding: 20px;max-width: 500px;position: relative;display: inline-block;margin-top: 5%;text-align: left;}' +
 			'#fba-dialog h3{margin-top:1em}' +
 			'#fba-text-name,#fba-text-email{max-width:100%!important;font-size:100%}' +
@@ -40,6 +40,7 @@
 			this.dialogEl.innerHTML =
 				'<form id="recruiter-form"><h3>' + this.options.title + '</h3><a id="fba-dialog-close" type="button" href="#">&times;</a>' +
 					'<p id="fba-description">' + this.options.description + '</p>' +
+					'<a href="/">Learn more</a>' +
 				  '<fieldset>' +
 						'<label for="fba-text-name">First name</label><input id="fba-text-name" name="fba-text-name" class="full-name" type="text" maxlength="500">' +
 		    				'<label for="fba-text-email">Email address</label><input id="fba-text-email" name=="fba-text-email" class="email-address" type="email" maxlength="500">' +
