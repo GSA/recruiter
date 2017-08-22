@@ -9,7 +9,8 @@
 		css: 	'#fba-button{position:fixed;bottom:0;right:50px;background:#02bfe7;color:#fff;padding:5px 10px;font-size:1em;text-decoration:none;z-index:999999999}' +
 			'#fba-dialog{position:fixed;top:5%;left:33%;right:33%;min-width:350px;background:#f1f1f1;padding:20px;z-index:999999999}' +
 			'#fba-dialog h3{margin-top:1em}' +
-			'#fba-text-name,#fba-text-email{max-width:100%!important;font-size:100%}' +
+			'#fba-text-name,#fba-text-
+		{max-width:100%!important;font-size:100%}' +
 			'#fba-dialog-close{position:absolute;top:0%;right:0%;padding:0px 3px;font-size:24px;color:#5b616b;background:none;line-height:1;text-decoration:none}' +
 			'#fba-dialog-privacy{position:absolute;bottom:1%;font-size:1.2rem;color:#aeb0b5;}' +
 
@@ -45,8 +46,9 @@
 				'<form id="recruiter-form"><h3>' + this.options.title + '</h3><a id="fba-dialog-close" type="button" href="#">&times;</a>' +
 					'<p id="fba-description">' + this.options.description + '</p>' +
 				  '<fieldset>' +
-						'<label for="fba-text-name">Your first name</label><input id="fba-text-name" name="fba-text-name" class="full-name" type="text" maxlength="500">' +
-		    		'<label for="fba-text-email">Your email address</label><input id="fba-text-email" name=="fba-text-email" class="email-address" type="text" maxlength="500">' +
+						'<label for="fba-text-name">First name</label><input id="fba-text-name" name="fba-text-name" class="full-name" type="text" maxlength="500">' +
+		    				'<label for="fba-text-email">Email address</label><input id="fba-text-email" name=="fba-text-email" class="email-address" type="email" maxlength="500">' +
+						'<label for="fba-text-phone">Phone number</label><input id="fba-text-phone" name="fba-text-phone" class="phone-number" type="tel" maxlength="500">' +
 						'<div class="button-wrapper">' +
 				  		'<input type="submit" id="fba-submit" class="usa-button-primary-alt" href="#"></input>' +
 						'</div>' +
