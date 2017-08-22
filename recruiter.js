@@ -12,12 +12,7 @@
 			'#fba-dialog h3{margin-top:1em}' +
 			'#fba-text-name,#fba-text-email{max-width:100%!important;font-size:100%}' +
 			'#fba-dialog-close{position:absolute;top:0%;right:0%;padding:0px 3px;font-size:24px;color:#5b616b;background:none;line-height:1;text-decoration:none}' +
-			'#fba-dialog-privacy{position:absolute;bottom:1%;font-size:1.2rem;color:#aeb0b5;}' +
-
-			'@media only screen and (max-width:400px){' +
-				'#fba-dialog{left:10%;width:80%}' +
-				'#fba-dialog-close{right:10%}' +
-			'}',
+			'#fba-dialog-privacy{position:absolute;bottom:1%;font-size:1.2rem;color:#aeb0b5;}' +,
 
 		init: function( options )
 		{
