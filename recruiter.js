@@ -7,7 +7,7 @@
   // All form components are namespaced under 'fba' = 'Feedback Analytics'
 	N.fba = {
 		css: 	'#fba-button{position:fixed;bottom:0;right:50px;background:#02bfe7;color:#fff;padding:5px 10px;font-size:1em;text-decoration:none;z-index:999999999}' +
-			'#fba-dialog{text-align:center;}' +
+			'#fba-dialog{text-align:center;position:fixed;z-index:9999999;width:100%;top:0;}' +
 			'#recruiter-form{background: #efefef;padding: 20px;max-width: 350px;position: relative;display: inline-block;margin-top: 10%;text-align: left;}' +
 			'#fba-dialog h3{margin-top:1em}' +
 			'#fba-text-name,#fba-text-email{max-width:100%!important;font-size:100%}' +
