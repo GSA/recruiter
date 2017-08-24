@@ -19,7 +19,7 @@
 			this.options = options;
 			this.loadCss();
 			this.loadHtml();
-			this.loadButton();
+			//this.loadButton();
 		},
 		loadCss: function()
 		{
@@ -56,11 +56,11 @@
 		handleButtonClick: function(e) { N.fba.loadDialog();e.preventDefault(); },
 		handleDialogClose: function(e) { N.fba.closeDialog();e.preventDefault(); },
 		handleSubmitClick: function(e) { N.fba.sendFeedback();e.preventDefault(); },
-		loadButton: function()
-		{
-			d.body.appendChild(this.buttonEl);
-			d.getElementById('fba-button').addEventListener( 'click', this.handleButtonClick, false );
-		},
+//		loadButton: function()
+//		{
+//			d.body.appendChild(this.buttonEl);
+//			d.getElementById('fba-button').addEventListener( 'click', this.handleButtonClick, false );
+//		},
 		loadDialog: function()
 		{
 			d.getElementById('fba-button').removeEventListener('click', this.handleButtonClick, false );
