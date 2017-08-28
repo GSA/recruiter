@@ -6,9 +6,10 @@
 (function ( d, N ) { 'use strict';
   // All form components are namespaced under 'fba' = 'Feedback Analytics'
 	N.fba = {
-		css: 	'#fba-button{position:fixed;bottom:0;right:50px;background:#02bfe7;color:#fff;padding:5px 10px;font-size:1em;text-decoration:none;z-index:999999999}' +
+		css: 	
+    //'#fba-button{position:fixed;bottom:0;right:50px;background:#02bfe7;color:#fff;padding:5px 10px;font-size:1em;text-decoration:none;z-index:999999999}' +
 			'#fba-dialog{text-align:center;position:fixed;z-index:9999999;bottom:0;top:0;left:0;right:0;overflow-y:auto;}' +
-			'#recruiter-form{background: #efefef;padding: 20px;max-width: 500px;position: relative;display: inline-block;margin-top: 5%;text-align: left;}' +
+			'#recruiter-form{background: #efefef;padding: 20px;max-width: 500px;position: relative;display: inline-block;margin-top:5%;text-align:left;margin-left:20px;margin-right;20px;}' +
 			'#fba-dialog h3{margin-top:1em}' +
 			'#fba-text-name,#fba-text-email{max-width:100%!important;font-size:100%}' +
 			'#fba-dialog-close{position:absolute;top:0%;right:0%;padding:0px 3px;font-size:24px;color:#5b616b;background:none;line-height:1;text-decoration:none;width:auto;}' +
@@ -19,7 +20,7 @@
 			this.options = options;
 			this.loadCss();
 			this.loadHtml();
-			//this.loadButton();
+			this.loadButton();
 		},
 		loadCss: function()
 		{
@@ -28,9 +29,9 @@
 		loadHtml: function()
 		{
 			this.buttonEl = document.createElement('a');
-			this.buttonEl.setAttribute('id', 'fba-button');
-			this.buttonEl.setAttribute('href', '#');
-			this.buttonEl.innerHTML = this.options.open;
+	//		this.buttonEl.setAttribute('id', 'fba-button');
+	//		this.buttonEl.setAttribute('href', '#');
+	//		this.buttonEl.innerHTML = this.options.open;
 
 			this.dialogEl = document.createElement('div');
 			this.dialogEl.setAttribute('id', 'fba-dialog');
@@ -56,18 +57,18 @@
 		handleButtonClick: function(e) { N.fba.loadDialog();e.preventDefault(); },
 		handleDialogClose: function(e) { N.fba.closeDialog();e.preventDefault(); },
 		handleSubmitClick: function(e) { N.fba.sendFeedback();e.preventDefault(); },
-//		loadButton: function()
-//		{
-//			d.body.appendChild(this.buttonEl);
-//			d.getElementById('fba-button').addEventListener( 'click', this.handleButtonClick, false );
-//		},
+		loadButton: function()
+		{
+			d.body.appendChild(this.buttonEl);
+			d.getElementById('recruiter-button').addEventListener( 'click', this.handleButtonClick, false );
+		},
 		loadDialog: function()
 		{
-			d.getElementById('fba-button').removeEventListener('click', this.handleButtonClick, false );
-			d.body.removeChild( d.getElementById('fba-button') );
+			d.getElementById('recruiter-button').removeEventListener('click', this.handleButtonClick, false );
+	//		d.body.removeChild( d.getElementById('recruiter-button') );
 
 			d.body.appendChild(this.dialogEl);
-//			d.body.getElementsByClassName('usa-overlay').setAttribute('opacity', '0.3')
+	//		d.body.getElementsByClassName('usa-overlay').setAttribute('opacity', '0.3')
 
 			d.getElementById('fba-dialog-close').addEventListener( 'click', this.handleDialogClose, false );
 			d.getElementById('fba-submit').addEventListener( 'click', this.handleSubmitClick, false );
