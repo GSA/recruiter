@@ -1,0 +1,1063 @@
+{
+    "exportFormatVersion": 2,
+    "exportTime": "2017-08-28 20:30:13",
+    "containerVersion": {
+        "path": "accounts/1357356891/containers/7386222/versions/0",
+        "accountId": "1357356891",
+        "containerId": "7386222",
+        "containerVersionId": "0",
+        "container": {
+            "path": "accounts/1357356891/containers/7386222",
+            "accountId": "1357356891",
+            "containerId": "7386222",
+            "name": "Recruiter - NSF",
+            "publicId": "GTM-M5MJXTS",
+            "usageContext": [
+                "WEB"
+            ],
+            "fingerprint": "1503952132013",
+            "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/1357356891/containers/7386222/workspaces?apiLink=container"
+        },
+        "tag": [
+            {
+                "accountId": "1357356891",
+                "containerId": "7386222",
+                "tagId": "4",
+                "name": "Event - JavaScript Error",
+                "type": "ua",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "nonInteraction",
+                        "value": "true"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "useDebugVersion",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventCategory",
+                        "value": "Error"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "trackType",
+                        "value": "TRACK_EVENT"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventAction",
+                        "value": "{{Error Message}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventLabel",
+                        "value": "Line {{Error Line}} - {{Error URL}}"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "overrideGaSettings",
+                        "value": "true"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "doubleClick",
+                        "value": "true"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setTrackerName",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableLinkId",
+                        "value": "true"
+                    },
+                    {
+                        "type": "LIST",
+                        "key": "dimension",
+                        "list": [
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "index",
+                                        "value": "1"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "dimension",
+                                        "value": "{{Page URL}}"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableEcommerce",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "trackingId",
+                        "value": "{{GA Property ID}}"
+                    }
+                ],
+                "fingerprint": "1503071034411",
+                "firingTriggerId": [
+                    "13"
+                ],
+                "parentFolderId": "8",
+                "tagFiringOption": "ONCE_PER_EVENT"
+            },
+            {
+                "accountId": "1357356891",
+                "containerId": "7386222",
+                "tagId": "12",
+                "name": "Event - Opened Recruiter",
+                "type": "ua",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "nonInteraction",
+                        "value": "true"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "overrideGaSettings",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventCategory",
+                        "value": "Form"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "trackType",
+                        "value": "TRACK_EVENT"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "gaSettings",
+                        "value": "{{GA Property Config}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventAction",
+                        "value": "Opened"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventLabel",
+                        "value": "Recruiter"
+                    }
+                ],
+                "fingerprint": "1503950935934",
+                "firingTriggerId": [
+                    "25"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT"
+            },
+            {
+                "accountId": "1357356891",
+                "containerId": "7386222",
+                "tagId": "5",
+                "name": "Event - Submitted Recruiter",
+                "type": "ua",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "nonInteraction",
+                        "value": "true"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "overrideGaSettings",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventCategory",
+                        "value": "Form"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "trackType",
+                        "value": "TRACK_EVENT"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "gaSettings",
+                        "value": "{{GA Property Config}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventAction",
+                        "value": "Submitted"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventLabel",
+                        "value": "Recruiter"
+                    }
+                ],
+                "fingerprint": "1503950921808",
+                "firingTriggerId": [
+                    "17"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT"
+            },
+            {
+                "accountId": "1357356891",
+                "containerId": "7386222",
+                "tagId": "6",
+                "name": "GA Pageview",
+                "type": "ua",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "overrideGaSettings",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "trackType",
+                        "value": "TRACK_PAGEVIEW"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "gaSettings",
+                        "value": "{{GA Property Config}}"
+                    }
+                ],
+                "fingerprint": "1503071034412",
+                "firingTriggerId": [
+                    "2147479553"
+                ],
+                "parentFolderId": "5",
+                "tagFiringOption": "UNLIMITED"
+            },
+            {
+                "accountId": "1357356891",
+                "containerId": "7386222",
+                "tagId": "7",
+                "name": "Recruiter to Google Sheet",
+                "type": "img",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "useCacheBuster",
+                        "value": "true"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "url",
+                        "value": "{{WebAppURL}}?Name={{Recruiter-Name}}&Phone={{Recruiter-Phone}}&Email={{Recruiter-Email}}&UserAgent={{UserAgent}}&Date={{Recruiter-Timestamp}}&Contacted=%20&Notes=%20"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "cacheBusterQueryParam",
+                        "value": "gtmcb"
+                    }
+                ],
+                "fingerprint": "1503672369986",
+                "firingTriggerId": [
+                    "17"
+                ],
+                "parentFolderId": "11",
+                "tagFiringOption": "ONCE_PER_EVENT"
+            },
+            {
+                "accountId": "1357356891",
+                "containerId": "7386222",
+                "tagId": "11",
+                "name": "recruiter-site-trigger.js",
+                "type": "html",
+                "notes": "Note: change to prod rawgit link or move script inline to GTM once ready for prod",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<script src='https://rawgit.com/GSA/recruiter/nsf-styles/recruiter-site-trigger.js'></script>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1503672488682",
+                "firingTriggerId": [
+                    "26"
+                ],
+                "parentFolderId": "11",
+                "tagFiringOption": "ONCE_PER_EVENT"
+            },
+            {
+                "accountId": "1357356891",
+                "containerId": "7386222",
+                "tagId": "9",
+                "name": "recruiter.js",
+                "type": "html",
+                "notes": "Note: change to prod rawgit link or move script inline to GTM once ready for prod",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<script src='https://rawgit.com/GSA/recruiter/nsf-styles/recruiter.js'></script>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1503672890361",
+                "firingTriggerId": [
+                    "2147479553"
+                ],
+                "blockingTriggerId": [
+                    "27"
+                ],
+                "parentFolderId": "11",
+                "tagFiringOption": "ONCE_PER_EVENT"
+            }
+        ],
+        "trigger": [
+            {
+                "accountId": "1357356891",
+                "containerId": "7386222",
+                "triggerId": "13",
+                "name": "Error",
+                "type": "JS_ERROR",
+                "fingerprint": "1503071034393",
+                "parentFolderId": "12"
+            },
+            {
+                "accountId": "1357356891",
+                "containerId": "7386222",
+                "triggerId": "16",
+                "name": "JavaScript Error",
+                "type": "JS_ERROR",
+                "fingerprint": "1503071034394"
+            },
+            {
+                "accountId": "1357356891",
+                "containerId": "7386222",
+                "triggerId": "26",
+                "name": "Load recruiter on NSF demo site",
+                "type": "PAGEVIEW",
+                "filter": [
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page URL}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "https://federalist-proxy.app.cloud.gov/preview/18f/nsf/uswds-jekyll/"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1503949822742"
+            },
+            {
+                "accountId": "1357356891",
+                "containerId": "7386222",
+                "triggerId": "27",
+                "name": "NSF demo site",
+                "type": "PAGEVIEW",
+                "filter": [
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page URL}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "https://federalist-proxy.app.cloud.gov/preview/18f/nsf/uswds-jekyll/"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1503672873280"
+            },
+            {
+                "accountId": "1357356891",
+                "containerId": "7386222",
+                "triggerId": "25",
+                "name": "Recruiter Button Click",
+                "type": "CLICK",
+                "filter": [
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Click ID}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "recruiter-button"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1503950714721"
+            },
+            {
+                "accountId": "1357356891",
+                "containerId": "7386222",
+                "triggerId": "17",
+                "name": "Recruiter-Submit",
+                "type": "CLICK",
+                "filter": [
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Click ID}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "fba-submit"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1503071034394",
+                "parentFolderId": "11"
+            }
+        ],
+        "variable": [
+            {
+                "accountId": "1357356891",
+                "containerId": "7386222",
+                "variableId": "1",
+                "name": "Auto-Event Var - Element",
+                "type": "aev",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "varType",
+                        "value": "ELEMENT"
+                    }
+                ],
+                "fingerprint": "1503071034395",
+                "parentFolderId": "7"
+            },
+            {
+                "accountId": "1357356891",
+                "containerId": "7386222",
+                "variableId": "2",
+                "name": "Auto-Event Var - Element Classes",
+                "type": "aev",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "varType",
+                        "value": "CLASSES"
+                    }
+                ],
+                "fingerprint": "1503071034396"
+            },
+            {
+                "accountId": "1357356891",
+                "containerId": "7386222",
+                "variableId": "3",
+                "name": "Auto-Event Var - Element Id",
+                "type": "aev",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "varType",
+                        "value": "ID"
+                    }
+                ],
+                "fingerprint": "1503071034396",
+                "parentFolderId": "7"
+            },
+            {
+                "accountId": "1357356891",
+                "containerId": "7386222",
+                "variableId": "4",
+                "name": "Auto-Event Var - Element Text",
+                "type": "aev",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "varType",
+                        "value": "TEXT"
+                    }
+                ],
+                "fingerprint": "1503071034396",
+                "parentFolderId": "7"
+            },
+            {
+                "accountId": "1357356891",
+                "containerId": "7386222",
+                "variableId": "5",
+                "name": "Element Text",
+                "type": "d",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "elementId",
+                        "value": "{{Auto-Event Var - Element Id}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "selectorType",
+                        "value": "ID"
+                    }
+                ],
+                "fingerprint": "1503071034398",
+                "parentFolderId": "7"
+            },
+            {
+                "accountId": "1357356891",
+                "containerId": "7386222",
+                "variableId": "7",
+                "name": "GA Property Config",
+                "type": "gas",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "cookieDomain",
+                        "value": "auto"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "doubleClick",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setTrackerName",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "useDebugVersion",
+                        "value": "false"
+                    },
+                    {
+                        "type": "LIST",
+                        "key": "fieldsToSet",
+                        "list": [
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "fieldName",
+                                        "value": "forceSSL"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "true"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "fieldName",
+                                        "value": "anonymizeIp"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "true"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "useHashAutoLink",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "decorateFormsAutoLink",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableLinkId",
+                        "value": "true"
+                    },
+                    {
+                        "type": "LIST",
+                        "key": "dimension",
+                        "list": [
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "index",
+                                        "value": "1"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "dimension",
+                                        "value": "{{Page URL}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "index",
+                                        "value": "2"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "dimension",
+                                        "value": "{{Container Version}}"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableEcommerce",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "trackingId",
+                        "value": "{{GA Property ID}}"
+                    }
+                ],
+                "fingerprint": "1503927221825"
+            },
+            {
+                "accountId": "1357356891",
+                "containerId": "7386222",
+                "variableId": "6",
+                "name": "GA Property ID",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "UA-93344103-3"
+                    }
+                ],
+                "fingerprint": "1503072667173",
+                "parentFolderId": "7"
+            },
+            {
+                "accountId": "1357356891",
+                "containerId": "7386222",
+                "variableId": "8",
+                "name": "GA clientId",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n  try {\n    var trackers = ga.getAll();\n    var i, len;\n    for (i = 0, len = trackers.length; i < len; i += 1) {\n      if (trackers[i].get('trackingId') === {{GA Property ID}}) {\n        return trackers[i].get('clientId');\n      }\n    }\n  } catch(e) {}  \n  return 'false';\n}"
+                    }
+                ],
+                "fingerprint": "1503071034401",
+                "parentFolderId": "7"
+            },
+            {
+                "accountId": "1357356891",
+                "containerId": "7386222",
+                "variableId": "9",
+                "name": "Recruiter-Email",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n  var inputField = document.getElementsByClassName(\"email-address\")[0];\n  return inputField.value || \"\";\n}"
+                    }
+                ],
+                "fingerprint": "1503071034401",
+                "parentFolderId": "11"
+            },
+            {
+                "accountId": "1357356891",
+                "containerId": "7386222",
+                "variableId": "10",
+                "name": "Recruiter-Name",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n  var inputField = document.getElementsByClassName(\"full-name\")[0];\n  return inputField.value || \"\";\n}\n"
+                    }
+                ],
+                "fingerprint": "1503951874395",
+                "parentFolderId": "11"
+            },
+            {
+                "accountId": "1357356891",
+                "containerId": "7386222",
+                "variableId": "19",
+                "name": "Recruiter-Phone",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n  var inputField = document.getElementsByClassName(\"phone-number\")[0];\n  return inputField.value || \"\";\n}"
+                    }
+                ],
+                "fingerprint": "1503082587609"
+            },
+            {
+                "accountId": "1357356891",
+                "containerId": "7386222",
+                "variableId": "11",
+                "name": "Recruiter-Timestamp",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function(){\n  var today = new Date();\n  var str = today.toUTCString();\n  return str;\n}"
+                    }
+                ],
+                "fingerprint": "1503071034402",
+                "parentFolderId": "11"
+            },
+            {
+                "accountId": "1357356891",
+                "containerId": "7386222",
+                "variableId": "12",
+                "name": "UserAgent",
+                "type": "j",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "navigator.userAgent"
+                    }
+                ],
+                "fingerprint": "1503071034403",
+                "parentFolderId": "7"
+            },
+            {
+                "accountId": "1357356891",
+                "containerId": "7386222",
+                "variableId": "13",
+                "name": "WebAppURL",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "https://script.google.com/a/macros/gsa.gov/s/AKfycbyZ_n1lxM8sftaePUAvt3xhEcdX7LW3hVbkeyBeodLwBAb1w9En/exec"
+                    }
+                ],
+                "fingerprint": "1503072423887",
+                "parentFolderId": "11"
+            },
+            {
+                "accountId": "1357356891",
+                "containerId": "7386222",
+                "variableId": "14",
+                "name": "buttonLabel",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "Send"
+                    }
+                ],
+                "fingerprint": "1503071034404",
+                "parentFolderId": "9"
+            },
+            {
+                "accountId": "1357356891",
+                "containerId": "7386222",
+                "variableId": "15",
+                "name": "formDesc",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "Thanks for offering to help us improve NSF.gov! Share your contact information below — if you’re selected, we’ll contact you to set up a 45-minute conversation with a member of our team."
+                    }
+                ],
+                "fingerprint": "1503082333007",
+                "parentFolderId": "9"
+            },
+            {
+                "accountId": "1357356891",
+                "containerId": "7386222",
+                "variableId": "16",
+                "name": "formTitle",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "Help NSF better serve yo"
+                    }
+                ],
+                "fingerprint": "1503086729302",
+                "parentFolderId": "9"
+            },
+            {
+                "accountId": "1357356891",
+                "containerId": "7386222",
+                "variableId": "17",
+                "name": "tabText",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "Help improve this site"
+                    }
+                ],
+                "fingerprint": "1503071034405",
+                "parentFolderId": "9"
+            },
+            {
+                "accountId": "1357356891",
+                "containerId": "7386222",
+                "variableId": "18",
+                "name": "thankYouText",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "Thank you - we will be in touch shortly!"
+                    }
+                ],
+                "fingerprint": "1503071034406",
+                "parentFolderId": "9"
+            }
+        ],
+        "folder": [
+            {
+                "accountId": "1357356891",
+                "containerId": "7386222",
+                "folderId": "5",
+                "name": "Analytics",
+                "fingerprint": "1503071034390"
+            },
+            {
+                "accountId": "1357356891",
+                "containerId": "7386222",
+                "folderId": "6",
+                "name": "Custom Scripts",
+                "fingerprint": "1503071034391"
+            },
+            {
+                "accountId": "1357356891",
+                "containerId": "7386222",
+                "folderId": "7",
+                "name": "Custom Variables",
+                "fingerprint": "1503071034391"
+            },
+            {
+                "accountId": "1357356891",
+                "containerId": "7386222",
+                "folderId": "8",
+                "name": "Events",
+                "fingerprint": "1503071034391"
+            },
+            {
+                "accountId": "1357356891",
+                "containerId": "7386222",
+                "folderId": "9",
+                "name": "Feedback Form Variables",
+                "fingerprint": "1503071034391"
+            },
+            {
+                "accountId": "1357356891",
+                "containerId": "7386222",
+                "folderId": "10",
+                "name": "Feedback UI",
+                "fingerprint": "1503071034392"
+            },
+            {
+                "accountId": "1357356891",
+                "containerId": "7386222",
+                "folderId": "11",
+                "name": "GTM to gSheet",
+                "fingerprint": "1503071034392"
+            },
+            {
+                "accountId": "1357356891",
+                "containerId": "7386222",
+                "folderId": "12",
+                "name": "Triggers",
+                "fingerprint": "1503071034392"
+            }
+        ],
+        "builtInVariable": [
+            {
+                "accountId": "1357356891",
+                "containerId": "7386222",
+                "type": "PAGE_URL",
+                "name": "Page URL"
+            },
+            {
+                "accountId": "1357356891",
+                "containerId": "7386222",
+                "type": "PAGE_HOSTNAME",
+                "name": "Page Hostname"
+            },
+            {
+                "accountId": "1357356891",
+                "containerId": "7386222",
+                "type": "PAGE_PATH",
+                "name": "Page Path"
+            },
+            {
+                "accountId": "1357356891",
+                "containerId": "7386222",
+                "type": "REFERRER",
+                "name": "Referrer"
+            },
+            {
+                "accountId": "1357356891",
+                "containerId": "7386222",
+                "type": "EVENT",
+                "name": "Event"
+            },
+            {
+                "accountId": "1357356891",
+                "containerId": "7386222",
+                "type": "CLICK_CLASSES",
+                "name": "Click Classes"
+            },
+            {
+                "accountId": "1357356891",
+                "containerId": "7386222",
+                "type": "CLICK_ID",
+                "name": "Click ID"
+            },
+            {
+                "accountId": "1357356891",
+                "containerId": "7386222",
+                "type": "CLICK_TARGET",
+                "name": "Click Target"
+            },
+            {
+                "accountId": "1357356891",
+                "containerId": "7386222",
+                "type": "CLICK_URL",
+                "name": "Click URL"
+            },
+            {
+                "accountId": "1357356891",
+                "containerId": "7386222",
+                "type": "CLICK_TEXT",
+                "name": "Click Text"
+            },
+            {
+                "accountId": "1357356891",
+                "containerId": "7386222",
+                "type": "FORM_ELEMENT",
+                "name": "Form Element"
+            },
+            {
+                "accountId": "1357356891",
+                "containerId": "7386222",
+                "type": "FORM_CLASSES",
+                "name": "Form Classes"
+            },
+            {
+                "accountId": "1357356891",
+                "containerId": "7386222",
+                "type": "FORM_ID",
+                "name": "Form ID"
+            },
+            {
+                "accountId": "1357356891",
+                "containerId": "7386222",
+                "type": "FORM_TEXT",
+                "name": "Form Text"
+            },
+            {
+                "accountId": "1357356891",
+                "containerId": "7386222",
+                "type": "ERROR_MESSAGE",
+                "name": "Error Message"
+            },
+            {
+                "accountId": "1357356891",
+                "containerId": "7386222",
+                "type": "ERROR_URL",
+                "name": "Error URL"
+            },
+            {
+                "accountId": "1357356891",
+                "containerId": "7386222",
+                "type": "ERROR_LINE",
+                "name": "Error Line"
+            },
+            {
+                "accountId": "1357356891",
+                "containerId": "7386222",
+                "type": "CONTAINER_VERSION",
+                "name": "Container Version"
+            }
+        ],
+        "fingerprint": "0",
+        "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/1357356891/containers/7386222/versions/0?apiLink=version"
+    }
+}
