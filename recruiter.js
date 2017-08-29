@@ -11,8 +11,7 @@
 			'#recruiter-form{background: #efefef;padding: 20px;max-width: 500px;position: relative;display: inline-block;margin-top:5%;text-align:left;margin-left:20px;margin-right;20px;}' +
 			'#fba-dialog h3{margin-top:1em}' +
 			'#fba-text-name,#fba-text-email{max-width:100%!important;font-size:100%}' +
-			'#fba-dialog-close{position:absolute;top:0%;right:0%;padding:0px 3px;font-size:24px;color:#5b616b;background:none;line-height:1;text-decoration:none;width:auto;}' +
-			'#fba-dialog-privacy{position:absolute;bottom:1%;font-size:1.2rem;color:#aeb0b5;}',
+			'#fba-dialog-close{position:absolute;top:0%;right:0%;padding:0px 3px;font-size:24px;color:#5b616b;background:none;line-height:1;text-decoration:none;width:auto;}',
 
 		init: function( options )
 		{
