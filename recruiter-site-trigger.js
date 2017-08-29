@@ -40,7 +40,7 @@
 			this.dialogEl.innerHTML =
 				'<form id="recruiter-form"><h3>' + this.options.title + '</h3><a id="fba-dialog-close" type="button" href="#">&times;</a>' +
 					'<p id="fba-description">' + this.options.description + '</p>' +
-					'<a href="../">Learn more</a>' +
+					'<a href="/web-design-labs/">Learn more</a>' +
 				  '<fieldset>' +
 						'<label for="fba-text-name">First name</label><input id="fba-text-name" name="fba-text-name" class="full-name" type="text" maxlength="500">' +
 		    				'<label for="fba-text-email">Email address</label><input id="fba-text-email" name=="fba-text-email" class="email-address" type="email" maxlength="500">' +
