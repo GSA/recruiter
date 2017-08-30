@@ -63,7 +63,7 @@
 			d.body.appendChild(this.buttonEl);
 			d.getElementById('recruiter-button').addEventListener( 'click', this.handleButtonClick, false );
 		},
-		loadDialog: function()
+		loadOverlay: function()
 		{
 		d.body.appendChild(this.overlayEl);
 		},
