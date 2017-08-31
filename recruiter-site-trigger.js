@@ -9,7 +9,7 @@
 		css:
 			'#fba-overlay.is-active{ position: fixed;bottom: 0;top: 0;left: 0;right: 0;background-color: rgba(0,0,0,.25);transition: background-color .25s;z-index: 1000;}' +
 			'#fba-modal{max-width: 500px;margin-top: 5%;margin-left: 20px;margin-right: 20px;z-index: 1001;margin: auto;position: fixed;top:5%;left: 0;right: 0;}' +
-			'#fba-modal-dialog{background: #fff;padding:10px;position:relative;width:auto;margin:10px;}' +
+			'#fba-modal-dialog{background: #fff;padding:20px;position:relative;width:auto;margin:10px;}' +
 			'#fba-modal-title {margin-top: 0;margin-right: 20px;margin-bottom:20px;font-size:2.5rem;}' +
 			'#fba-text-name,#fba-text-email{max-width:100%!important;font-size:100%}' +
 			'#fba-modal-close{position: absolute;top:0;right:0;padding:10px;font-size: 24px;color: #5b616b;background: none;line-height: 1;text-decoration: none;width: auto;}' +
