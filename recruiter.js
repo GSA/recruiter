@@ -24,7 +24,18 @@
 			this.loadCss();
 			this.loadHtml();
 			this.loadButton();
+			this.bindEventListeners();
+			this.dialogOpen = false;
 		},
+		bindEventListeners: function()
+	 {
+		 var self = this;
+		 document.addEventListener('keyup', function (event) {
+			 var x = event.keyCode;
+			 if( x == 27 && self.dialogOpen == true){
+			 self.closeDialog();
+		 }})
+	 },
 		loadCss: function()
 		{
 			d.head.innerHTML += '<style>' + this.css + '</style>';
@@ -66,22 +77,19 @@
 		{
 			d.getElementById('fba-button').removeEventListener('click', this.handleButtonClick, false );
 			d.body.removeChild( d.getElementById('fba-button') );
-
 			d.body.appendChild(this.dialogEl);
-//			d.body.getElementsByClassName('usa-overlay').setAttribute('opacity', '0.3')
-
 			d.getElementById('fba-dialog-close').addEventListener( 'click', this.handleDialogClose, false );
 			d.getElementById('fba-submit').addEventListener( 'click', this.handleSubmitClick, false );
+			this.dialogOpen = true;
 		},
 		closeDialog: function()
 		{
+			d.getElementById('fba-dialog-close').removeEventListener('keypress', this.handleDialogClose, false );
 			d.getElementById('fba-dialog-close').removeEventListener('click', this.handleDialogClose, false );
 			d.getElementById('fba-submit').removeEventListener('click', this.handleSubmitClick, false );
-
-	//		d.body.removeChild( d.getElementsByClassName('usa-overlay') );
 			d.body.removeChild( d.getElementById('fba-dialog') );
-
 			this.loadButton();
+			this.dialogOpen = false;
 		},
 
 		sendFeedback: function()
