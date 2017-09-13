@@ -30,11 +30,14 @@
 		bindEventListeners: function()
 	 {
 		 var self = this;
-		 document.addEventListener('keyup', function (event) {
+		 d.addEventListener('keyup', function (event) {
 			 var x = event.keyCode;
 			 if( x == 27 && self.dialogOpen == true){
 			 self.closeDialog();
-		 }})
+		 }});
+		 d.addEventListener('click', function (event) {
+			 self.handleClick(event);
+		 });
 	 },
 		loadCss: function()
 		{
@@ -47,8 +50,11 @@
 			this.buttonEl.setAttribute('href', '#');
 			this.buttonEl.innerHTML = this.options.open;
 
+			this.overlayEl = document.createElement('div');
+			this.overlayEl.setAttribute('id', 'fba-overlay');
+
 			this.dialogEl = document.createElement('div');
-			this.dialogEl.setAttribute('id', 'fba-dialog');
+			this.dialogEl.setAttribute('id', 'fba-modal');
 			this.dialogEl.setAttribute('role', 'dialog');
 
 			// Here lies our form interface
@@ -65,6 +71,11 @@
 					'<p id="fba-dialog-privacy" class="usa-external_link"><a href="https://www.gsa.gov/portal/content/162010">Privacy</a></p>' +
 				'</form>';
 		},
+		handleClick: function(e) {
+		if (N.fba.dialogOpen && !e.target.closest('#fba-button') && !e.target.closest('#fba-modal-dialog')) {
+		 N.fba.closeDialog();
+		}
+	},
 		handleButtonClick: function(e) { N.fba.loadDialog();e.preventDefault(); },
 		handleDialogClose: function(e) { N.fba.closeDialog();e.preventDefault(); },
 		handleSubmitClick: function(e) { N.fba.sendFeedback();e.preventDefault(); },
