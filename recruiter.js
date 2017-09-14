@@ -24,7 +24,21 @@
 			this.loadCss();
 			this.loadHtml();
 			this.loadButton();
+			this.bindEventListeners();
+			this.dialogOpen = false;
 		},
+		bindEventListeners: function()
+	 {
+		 var self = this;
+		 d.addEventListener('keyup', function (event) {
+			 var x = event.keyCode;
+			 if( x == 27 && self.dialogOpen == true){
+			 self.closeDialog();
+		 }});
+		 d.addEventListener('click', function (event) {
+			 self.handleClick(event);
+		 });
+	 },
 		loadCss: function()
 		{
 			d.head.innerHTML += '<style>' + this.css + '</style>';
@@ -36,8 +50,11 @@
 			this.buttonEl.setAttribute('href', '#');
 			this.buttonEl.innerHTML = this.options.open;
 
+			this.overlayEl = document.createElement('div');
+			this.overlayEl.setAttribute('id', 'fba-overlay');
+
 			this.dialogEl = document.createElement('div');
-			this.dialogEl.setAttribute('id', 'fba-dialog');
+			this.dialogEl.setAttribute('id', 'fba-modal');
 			this.dialogEl.setAttribute('role', 'dialog');
 
 			// Here lies our form interface
@@ -54,6 +71,11 @@
 					'<p id="fba-dialog-privacy" class="usa-external_link"><a href="https://www.gsa.gov/portal/content/162010">Privacy</a></p>' +
 				'</form>';
 		},
+		handleClick: function(e) {
+		if (N.fba.dialogOpen && !e.target.closest('#fba-button') && !e.target.closest('#fba-modal-dialog')) {
+		 N.fba.closeDialog();
+		}
+	},
 		handleButtonClick: function(e) { N.fba.loadDialog();e.preventDefault(); },
 		handleDialogClose: function(e) { N.fba.closeDialog();e.preventDefault(); },
 		handleSubmitClick: function(e) { N.fba.sendFeedback();e.preventDefault(); },
@@ -66,22 +88,19 @@
 		{
 			d.getElementById('fba-button').removeEventListener('click', this.handleButtonClick, false );
 			d.body.removeChild( d.getElementById('fba-button') );
-
 			d.body.appendChild(this.dialogEl);
-//			d.body.getElementsByClassName('usa-overlay').setAttribute('opacity', '0.3')
-
 			d.getElementById('fba-dialog-close').addEventListener( 'click', this.handleDialogClose, false );
 			d.getElementById('fba-submit').addEventListener( 'click', this.handleSubmitClick, false );
+			this.dialogOpen = true;
 		},
 		closeDialog: function()
 		{
+			d.getElementById('fba-dialog-close').removeEventListener('keypress', this.handleDialogClose, false );
 			d.getElementById('fba-dialog-close').removeEventListener('click', this.handleDialogClose, false );
 			d.getElementById('fba-submit').removeEventListener('click', this.handleSubmitClick, false );
-
-	//		d.body.removeChild( d.getElementsByClassName('usa-overlay') );
 			d.body.removeChild( d.getElementById('fba-dialog') );
-
 			this.loadButton();
+			this.dialogOpen = false;
 		},
 
 		sendFeedback: function()
