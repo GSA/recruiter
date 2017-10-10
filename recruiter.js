@@ -50,7 +50,7 @@
 			this.dialogEl.innerHTML =
 			'<div id="fba-modal-dialog"><h3 id="fba-modal-title">' + this.options.title + '</h3><a id="fba-modal-close" type="button" href="#">&times;</a>' +
 				'<p id="fba-description">' + this.options.description + '</p>' +
-				'<a href="/web-design-labs/">Learn more</a>' +
+				'<a href="https://nsf.gov/web-design-labs/">Learn more</a>' +
 				'<form id="recruiter-form"><fieldset>' +
 					'<label for="fba-text-name">First name</label><input id="fba-text-name" name="fba-text-name" class="full-name" type="text" maxlength="500">' +
 							'<label for="fba-text-email">Email address</label><input id="fba-text-email" name=="fba-text-email" class="email-address" type="email" maxlength="500">' +
