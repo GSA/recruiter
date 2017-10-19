@@ -1,10 +1,6 @@
-  /**
- * Adapted from Google Analytics Feedback Widget
- * Version 1.1.0 by Xavi Esteve | http://xaviesteve.com
- */
+// All form components are namespaced under 'fba' = 'Feedback Analytics'
 
 (function ( d, N ) { 'use strict';
-  // All form components are namespaced under 'fba' = 'Feedback Analytics'
 	N.fba = {
 		css: 	'#fba-button{position:fixed;bottom:0;right:50px;background:#02bfe7;color:#fff;padding:5px 10px;font-size:1em;text-decoration:none;z-index:999999999}' +
 			'#fba-dialog{position:fixed;top:5%;left:33%;right:33%;min-width:350px;background:#f1f1f1;padding:20px;z-index:999999999}' +
