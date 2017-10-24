@@ -1,7 +1,7 @@
 
 ### Copy the code below and paste it onto every page of your website.
 
-#### Paste this code as high in the <head> of the page as possible:
+#### Paste this code as high in the `<head>` of the page as possible:
 
 ```
 !-- Google Tag Manager -->
