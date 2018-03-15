@@ -9,10 +9,10 @@ Embeddable forms for recruiting usability research participants. Uses Google Tag
  - [Google Sheets Template](https://docs.google.com/a/gsa.gov/spreadsheets/d/1_de-8lkbxPAy0ovb_WH22EI03vX8ZnuZhhiXnXWvxpQ/copy)
  - [Google Tag Manager](https://tagmanager.google.com) - account required
  - [Google Apps Script](https://script.google.com/a/gsa.gov/d/1CSUCE9JHkMOutafCJxw3NTQ-J3n3PZlF0Z9UEJae9KxIlcq_AkWTXsEa/edit?usp=sharing) (for reference only - already bound to Sheets Template)
- - [U.S. Web Design Standards](https://standards.usa.gov/) styles and [form patterns guidance](https://standards.usa.gov/components/form-templates/) for accessibility.
+ - [U.S. Web Design System](https://standards.usa.gov/) styles and [form patterns guidance](https://standards.usa.gov/components/form-templates/) for accessibility.
 
  **Optional**
- - _TODO: Google Analytics integration (capture response events + session metadata)_
+ - Integration with Google Analytics to send custom events when a user opens, closes, and submits the Recruiter form dialog.
 
 
 ## Deploying
@@ -36,13 +36,20 @@ See [Wiki](https://github.com/GSA/recruiter/wiki/Deploying)
  ## Compliance
  
  **Paperwork Reduction Act of 1995 (PRA)** 
- - See [exemption conditions](https://obamawhitehouse.archives.gov/sites/default/files/omb/inforeg/pra_flexibilities_memo_7_22_16_finalI.pdf), details TBD
+ - See [exemption conditions](https://obamawhitehouse.archives.gov/sites/default/files/omb/inforeg/pra_flexibilities_memo_7_22_16_finalI.pdf).
  
  **Privacy**
- - **Google Sheets** are an approved System of Record for storing personally-identifiable information ([PII](https://www.gsa.gov/portal/content/104256)) under [GSA/CIO-3](https://www.federalregister.gov/documents/2014/08/12/2014-19071/privacy-act-of-1974-notice-of-an-updated-system-of-records)
+
+- GSA's **[Privacy Act Statement on Design Research](https://www.gsa.gov/reference/gsa-privacy-program/privacy-act-statement-for-design-research)**
+
+- Collection of data from users such as that requested by tools like Recruiter is authorized by the **E-Government Act of 2002 (P.L. 107-347, 44 USC § 3501)**.
+
+- See GSA's **[Design Research Privacy Impact Assessment (PIA)](https://www.gsa.gov/cdnstatic/design_research_pia_%28signed%29.pdf)** for additional details about the way Recruiter collects and stores administrative data.
+
+ - **Google Sheets** are an approved System of Record for storing personally-identifiable information ([PII](https://www.gsa.gov/portal/content/104256)) under [GSA/CIO-3](https://www.federalregister.gov/documents/2014/08/12/2014-19071/privacy-act-of-1974-notice-of-an-updated-system-of-records).
 
 **Security**
- - **Google Apps Script** Reviewed and approved by GSA IT 8/17
+ - **Google Apps Script** Reviewed and approved by GSA IT 8/17.
 
 ## Roadmap
 Recruiter is the first part of a larger WIP feedback platform implemented via Google Tag Manager.
