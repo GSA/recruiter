@@ -3,7 +3,7 @@ Embeddable forms for recruiting usability research participants. Uses Google Tag
 
 ## Components
 
-![feedback platform components](https://gsa.github.io/recruiter/Feedback_Platform_Components-v2.svg)
+![feedback platform components](https://gsa.github.io/recruiter/docs/img/Feedback_Platform_Components-v2.svg)
 
 
  - [Google Sheets Template](https://docs.google.com/a/gsa.gov/spreadsheets/d/1_de-8lkbxPAy0ovb_WH22EI03vX8ZnuZhhiXnXWvxpQ/copy)
