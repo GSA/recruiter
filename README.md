@@ -8,7 +8,6 @@ Embeddable forms for recruiting usability research participants. Uses Google Tag
 
  - [Google Sheets Template](https://docs.google.com/a/gsa.gov/spreadsheets/d/1_de-8lkbxPAy0ovb_WH22EI03vX8ZnuZhhiXnXWvxpQ/copy)
  - [Google Tag Manager](https://tagmanager.google.com) - account required
- - [Google Apps Script](https://script.google.com/a/gsa.gov/d/1CSUCE9JHkMOutafCJxw3NTQ-J3n3PZlF0Z9UEJae9KxIlcq_AkWTXsEa/edit?usp=sharing) (for reference only - already bound to Sheets Template)
  - [U.S. Web Design System](https://standards.usa.gov/) styles and [form patterns guidance](https://standards.usa.gov/components/form-templates/) for accessibility.
 
  **Optional**
@@ -31,7 +30,7 @@ See [Wiki](https://github.com/GSA/recruiter/wiki/Deploying)
 
 **\*Note:** When deploying to sites where URLs contain references to content that may infer information of a personal or sensitive nature (e.g. visiting content related to medical conditions on NIH.gov), you may wish to omit passing the last two fields (`URL` and `Referrer`) to the Sheet. This can be done simply by removing the last two query parameters (`&Referrer={{Referrer}}&URL={{Page URL}}`) from the URL in the `Recruiter to Google Sheet` Custom Image Tag in GTM.
 
- **Warning: PIA, [PRA](https://www.usability.gov/how-to-and-tools/guidance/pra-overview.html) or other privacy or security compliance issues may be triggered for any customized capture fields. Consult Chief Privacy Officer and/or PRA Desk Officer before deploying any customized form versions.**
+ **Warning: PIA, [PRA](https://www.usability.gov/how-to-and-tools/guidance/pra-overview.html) or other privacy or security compliance issues may be triggered for any customized capture fields. Consult your agency's Chief Privacy Officer and/or PRA Desk Officer before deploying any customized form versions.**
  
  ## Compliance
  
@@ -47,9 +46,6 @@ See [Wiki](https://github.com/GSA/recruiter/wiki/Deploying)
 - See GSA's **[Design Research Privacy Impact Assessment (PIA)](https://www.gsa.gov/cdnstatic/design_research_pia_%28signed%29.pdf)** for additional details about the way Recruiter collects and stores administrative data.
 
  - **Google Sheets** are an approved System of Record for storing personally-identifiable information ([PII](https://www.gsa.gov/portal/content/104256)) under [GSA/CIO-3](https://www.federalregister.gov/documents/2014/08/12/2014-19071/privacy-act-of-1974-notice-of-an-updated-system-of-records).
-
-**Security**
- - **Google Apps Script** Reviewed and approved by GSA IT 8/17.
 
 ## Roadmap
 Recruiter is the first part of a larger WIP feedback platform implemented via Google Tag Manager.
